@@ -4,7 +4,11 @@ using UnityEngine;
 
 public class SunPosition : MonoBehaviour
 {
+    public bool tickTime = true;
+
     // Time, no specific unit, we'll control as needed
+    // 0 is effectively noon; sunrise/sunset depend on other variables
+    // Sunset is around 1/4 cycleLength, sunrise is around 3/4 cycleLength, deviating based on latitude and tilt
     public float time;
 
     // Time for a full movement cycle
@@ -17,6 +21,7 @@ public class SunPosition : MonoBehaviour
     public float axialTilt = 10;
 
     // Angle clockwise from the positive x-axis from which the sun rises
+    // Actual sunrise position will deviate with axialTilt (eg at 10 degrees axial tilt, the sun will rise 10 degrees clockwise from east)
     public float east = 90;
 
     // Start is called before the first frame update
@@ -28,10 +33,18 @@ public class SunPosition : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        time += Time.deltaTime;
-        if (time > cycleLength)
+        if (tickTime)
+        {
+            time += Time.deltaTime;
+        }
+            
+        if (time >= cycleLength)
         {
             time -= cycleLength;
+        }
+        else if (time < 0)
+        {
+            time += cycleLength;
         }
 
         // Math from https://www.sciencedirect.com/topics/engineering/solar-declination
@@ -41,15 +54,33 @@ public class SunPosition : MonoBehaviour
         float latRad = localLatitude * Mathf.Deg2Rad;
         float tiltRad = axialTilt * Mathf.Deg2Rad;
 
-        float x = Mathf.Asin(Mathf.Cos(latRad) * Mathf.Cos(tiltRad) * Mathf.Cos(hourAngle) + Mathf.Sin(latRad) * Mathf.Sin(tiltRad));
+        float altitude = Mathf.Asin(Mathf.Cos(latRad) * Mathf.Cos(tiltRad) * Mathf.Cos(hourAngle) + Mathf.Sin(latRad) * Mathf.Sin(tiltRad));
 
-        float y = Mathf.Acos((Mathf.Sin(x) * Mathf.Sin(latRad) - Mathf.Sin(tiltRad)) / (Mathf.Cos(x) * Mathf.Cos(latRad)));
+        Debug.Log(altitude);
 
-        if (time > (cycleLength * 0.5f))
+        float azimuth = Mathf.Acos((Mathf.Sin(altitude) * Mathf.Sin(latRad) - Mathf.Sin(tiltRad)) / (Mathf.Cos(altitude) * Mathf.Cos(latRad)));
+
+        Debug.Log(azimuth);
+
+        // Above equation doesn't behave at min and max latitude but easy model those cases
+        if (localLatitude == 90)
         {
-            y = 2 * Mathf.PI - y;
+            azimuth = -hourAngle;
+        }
+        else if (localLatitude == -90)
+        {
+            azimuth = hourAngle;
+        }
+        // Should only happen when the sun is directly above or below, safe to set to 0
+        else if (float.IsInfinity(azimuth) || float.IsNaN(azimuth))
+        {
+            azimuth = 0;
+        }
+        else if (time > (cycleLength * 0.5f))
+        {
+            azimuth = 2 * Mathf.PI - azimuth;
         }
 
-        transform.rotation = Quaternion.Euler(x * Mathf.Rad2Deg, y * Mathf.Rad2Deg, 0f);
+        transform.rotation = Quaternion.Euler(altitude * Mathf.Rad2Deg, azimuth * Mathf.Rad2Deg + east, 0f);
     }
 }
