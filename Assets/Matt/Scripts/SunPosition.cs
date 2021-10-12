@@ -6,6 +6,8 @@ public class SunPosition : MonoBehaviour
 {
     public bool tickTime = true;
 
+    public float startingPhase = 0.75f;
+
     // Time, no specific unit, we'll control as needed
     // 0 is effectively noon; sunrise/sunset depend on other variables
     // Sunset is around 1/4 cycleLength, sunrise is around 3/4 cycleLength, deviating based on latitude and tilt
@@ -27,7 +29,7 @@ public class SunPosition : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+        time = startingPhase * cycleLength;
     }
 
     // Update is called once per frame
@@ -56,11 +58,11 @@ public class SunPosition : MonoBehaviour
 
         float altitude = Mathf.Asin(Mathf.Cos(latRad) * Mathf.Cos(tiltRad) * Mathf.Cos(hourAngle) + Mathf.Sin(latRad) * Mathf.Sin(tiltRad));
 
-        Debug.Log(altitude);
+        //Debug.Log(altitude);
 
         float azimuth = Mathf.Acos((Mathf.Sin(altitude) * Mathf.Sin(latRad) - Mathf.Sin(tiltRad)) / (Mathf.Cos(altitude) * Mathf.Cos(latRad)));
 
-        Debug.Log(azimuth);
+        //Debug.Log(azimuth);
 
         // Above equation doesn't behave at min and max latitude but easy model those cases
         if (localLatitude == 90)
