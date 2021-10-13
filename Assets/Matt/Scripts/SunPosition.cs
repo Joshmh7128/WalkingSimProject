@@ -16,6 +16,8 @@ public class SunPosition : MonoBehaviour
     // Time for a full movement cycle
     public float cycleLength = 24;
 
+    // If the sum of latitude and tilt is > 90 or < -90 it will always be day or night respectively (with variable amounts of light)
+
     // Latitude of 0, 0. 0 will result in an equatorial path, 90 and -90 polar
     public float localLatitude = 20;
 
