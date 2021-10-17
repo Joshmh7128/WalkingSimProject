@@ -8,7 +8,7 @@ public class StaffScript : MonoBehaviour
     PlayerScript playerScript;
     public PlayerScript.staffStates staffState; // what is our current staff state of the player's possible staff states?
     public bool isHeld; // are we being held by the player?
-
+    bool canGrab; // can we be picked up?
     PuzzleManager puzzleManager;
 
     // Start is called before the first frame update
@@ -22,8 +22,9 @@ public class StaffScript : MonoBehaviour
         // set our playerscript from the puzzlemanager
         playerScript = puzzleManager.playerScript;
 
-        // we are not being held
+        // we are not being held and can be picked up
         isHeld = false;
+        canGrab = true;
     }
 
     private void OnTriggerEnter(Collider other)
@@ -31,6 +32,24 @@ public class StaffScript : MonoBehaviour
         // check to see if the player steps on us
         if (other.CompareTag("Player"))
         {
+            canGrab = true;
+        }
+    }
+
+    private void OnTriggerExit(Collider other)
+    {
+        // check to see if the player steps on us
+        if (other.CompareTag("Player"))
+        {
+            canGrab = false;
+        }
+    }
+
+    private void Update()
+    {
+        if (Input.GetKeyDown(KeyCode.Mouse0))
+        {
+            if (canGrab)
             // if the player is holding nothing then we can be picked up
             if (playerScript.StaffState == PlayerScript.staffStates.None)
             {
