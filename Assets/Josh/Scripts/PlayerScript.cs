@@ -4,8 +4,10 @@ using UnityEngine;
 
 public class PlayerScript : MonoBehaviour
 {
-
     // custom player script
+
+    public StaffScript ourStaff;
+
     public enum staffStates
     {
         // put all staff colors here
@@ -16,7 +18,7 @@ public class PlayerScript : MonoBehaviour
     // setup our list of on-screen staff objects
     [SerializeField] List<GameObject> cosmeticStaffObjects; // correspond directly with states. 0 = none, 1 = white, etc
 
-    public staffStates staffState;
+    private staffStates staffState;
 
     // what staff state are we in?
     public staffStates StaffState
@@ -24,13 +26,20 @@ public class PlayerScript : MonoBehaviour
         get { return staffState; }
 
         set
-        {   
+        {
+            staffState = value;
             // disable all our staffObjects
             foreach (GameObject staffObject in cosmeticStaffObjects)
             { staffObject.SetActive(false); }
             // enable the one we have now
-            cosmeticStaffObjects[(int)staffState].SetActive(true);
+            cosmeticStaffObjects[(int)value].SetActive(true);
         }
+    }
+
+    // wrapper for staff placement
+    public void PlaceStaff(Transform targetTransform)
+    {
+        ourStaff.PlaceStaff(targetTransform);
     }
 
 }

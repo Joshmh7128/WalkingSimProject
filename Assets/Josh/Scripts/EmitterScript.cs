@@ -21,8 +21,8 @@ public class EmitterScript : MonoBehaviour
     private void FixedUpdate()
     {
         if (emitterState != PlayerScript.staffStates.None)
-        {
-            // update the positions of our target
+        {   
+            // set our second position
             lineRenderer.SetPosition(1, lightTarget.position);
         }
     }

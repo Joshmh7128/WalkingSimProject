@@ -8,6 +8,7 @@ public class StaffScript : MonoBehaviour
     PlayerScript playerScript;
     public PlayerScript.staffStates staffState; // what is our current staff state of the player's possible staff states?
     public bool isHeld; // are we being held by the player?
+
     PuzzleManager puzzleManager;
 
     // Start is called before the first frame update
@@ -34,7 +35,7 @@ public class StaffScript : MonoBehaviour
             if (playerScript.StaffState == PlayerScript.staffStates.None)
             {
                 // assurance incase of human error
-                if (staffState == PlayerScript.staffStates.None)
+                if (staffState == PlayerScript.staffStates.None && isHeld == false)
                 {
                     Debug.LogError("Staff was attempted to be picked up without first setting it's color!");
                 }
@@ -42,13 +43,27 @@ public class StaffScript : MonoBehaviour
                 // if the staff has it's light set and this staff is not being held
                 if (staffState != PlayerScript.staffStates.None && isHeld == false)
                 {
+
+                    isHeld = true;
+
                     // if we are not None then set the player's staff state to our staff state
                     playerScript.StaffState = staffState;
+                    playerScript.ourStaff = this;
 
                     // place our staff on our player so that our light tracks it
                     transform.parent = playerScript.gameObject.transform;
+                    transform.position = playerScript.gameObject.transform.position;
                 }
             }
         }
+    }
+
+    // called when we want to be put down
+    public void PlaceStaff(Transform targetTransform)
+    {
+        isHeld = false;
+        transform.parent = null;
+        playerScript.StaffState = PlayerScript.staffStates.None;
+        transform.position = targetTransform.position;
     }
 }
