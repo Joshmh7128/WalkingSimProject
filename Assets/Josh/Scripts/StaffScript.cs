@@ -25,7 +25,7 @@ public class StaffScript : MonoBehaviour
 
         // set our staff state
         staffState = ourEmitter.emitterState;
-        gameObject.GetComponent<Renderer>().material = puzzleManager.emissionMaterials[(int)staffState];
+        // gameObject.GetComponent<Renderer>().material = puzzleManager.emissionMaterials[(int)staffState];
 
         // we are not being held and can be picked up
         isHeld = false;

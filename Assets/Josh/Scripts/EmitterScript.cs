@@ -9,6 +9,7 @@ public class EmitterScript : MonoBehaviour
     [SerializeField] PuzzleManager puzzleManager; 
     [SerializeField] StaffScript staffScript; 
     [SerializeField] LineRenderer lineRenderer; // our line renderer
+    [SerializeField] Light spotLight; // our line renderer
     public Transform lightOrigin; // the target of our light
     public Transform lightTarget; // the target of our light
     public bool isOn; // is this light on?
@@ -45,6 +46,12 @@ public class EmitterScript : MonoBehaviour
             lightOrigin.gameObject.GetComponent<Renderer>().material = puzzleManager.emissionMaterials[0];
             lineRenderer.enabled = false;
         }
+
+        if (Physics.Linecast(lightOrigin.position, lightTarget.position, Physics.AllLayers, QueryTriggerInteraction.Ignore))
+        { isOn = false; }
+
+        if (!Physics.Linecast(lightOrigin.position, lightTarget.position, Physics.AllLayers, QueryTriggerInteraction.Ignore))
+        { isOn = true; }
 
         if (emitterState != PlayerScript.staffStates.None)
         {   
