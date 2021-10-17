@@ -36,13 +36,14 @@ public class EmitterScript : MonoBehaviour
             // update our renderers to show this
             lightOrigin.gameObject.GetComponent<Renderer>().material = puzzleManager.emissionMaterials[(int)emitterState];
             lineRenderer.material = puzzleManager.emissionMaterials[(int)emitterState];
+            lineRenderer.enabled = true;
         }
 
         if (!isOn)
         {
             // update our renderers to show this
             lightOrigin.gameObject.GetComponent<Renderer>().material = puzzleManager.emissionMaterials[0];
-            lineRenderer.material = puzzleManager.emissionMaterials[0];
+            lineRenderer.enabled = false;
         }
 
         if (emitterState != PlayerScript.staffStates.None)
