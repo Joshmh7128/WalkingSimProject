@@ -37,9 +37,9 @@ public class PlayerScript : MonoBehaviour
     }
 
     // wrapper for staff placement
-    public void PlaceStaff(Transform targetTransform)
+    public void PlaceStaff(Transform targetTransform, StaffHolderScript newHolder)
     {
-        ourStaff.PlaceStaff(targetTransform);
+        ourStaff.PlaceStaff(targetTransform, newHolder);
     }
 
 }

@@ -8,9 +8,10 @@ public class StaffScript : MonoBehaviour
     PlayerScript playerScript;
     public PlayerScript.staffStates staffState; // what is our current staff state of the player's possible staff states?
     public bool isHeld; // are we being held by the player?
-    bool canGrab; // can we be picked up?
+    public bool canGrab; // can we be picked up?
     PuzzleManager puzzleManager;
-
+    public StaffHolderScript currentHolder;
+    [SerializeField] EmitterScript ourEmitter;
     // Start is called before the first frame update
     void Start()
     {
@@ -22,9 +23,13 @@ public class StaffScript : MonoBehaviour
         // set our playerscript from the puzzlemanager
         playerScript = puzzleManager.playerScript;
 
+        // set our staff state
+        staffState = ourEmitter.emitterState;
+        gameObject.GetComponent<Renderer>().material = puzzleManager.emissionMaterials[(int)staffState];
+
         // we are not being held and can be picked up
         isHeld = false;
-        canGrab = true;
+        canGrab = false;
     }
 
     private void OnTriggerEnter(Collider other)
@@ -50,39 +55,44 @@ public class StaffScript : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.Mouse0))
         {
             if (canGrab)
-            // if the player is holding nothing then we can be picked up
-            if (playerScript.StaffState == PlayerScript.staffStates.None)
             {
-                // assurance incase of human error
-                if (staffState == PlayerScript.staffStates.None && isHeld == false)
+                // if the player is holding nothing then we can be picked up
+                if (playerScript.StaffState == PlayerScript.staffStates.None)
                 {
-                    Debug.LogError("Staff was attempted to be picked up without first setting it's color!");
-                }
+                    // assurance incase of human error
+                    if (staffState == PlayerScript.staffStates.None && isHeld == false)
+                    {
+                        Debug.LogError("Staff was attempted to be picked up without first setting it's color!");
+                    }
 
-                // if the staff has it's light set and this staff is not being held
-                if (staffState != PlayerScript.staffStates.None && isHeld == false)
-                {
+                    // if the staff has it's light set and this staff is not being held
+                    if (staffState != PlayerScript.staffStates.None && isHeld == false)
+                    {
+                        currentHolder.spotOccupied = false;
+                        currentHolder = null;
+                        isHeld = true;
 
-                    isHeld = true;
+                        // if we are not None then set the player's staff state to our staff state
+                        playerScript.StaffState = staffState;
+                        playerScript.ourStaff = this;
 
-                    // if we are not None then set the player's staff state to our staff state
-                    playerScript.StaffState = staffState;
-                    playerScript.ourStaff = this;
-
-                    // place our staff on our player so that our light tracks it
-                    transform.parent = playerScript.gameObject.transform;
-                    transform.position = playerScript.gameObject.transform.position;
+                        // place our staff on our player so that our light tracks it
+                        transform.parent = playerScript.gameObject.transform;
+                        transform.position = playerScript.gameObject.transform.position;
+                    }
                 }
             }
         }
     }
 
     // called when we want to be put down
-    public void PlaceStaff(Transform targetTransform)
+    public void PlaceStaff(Transform targetTransform, StaffHolderScript newHolder)
     {
         isHeld = false;
         transform.parent = null;
         playerScript.StaffState = PlayerScript.staffStates.None;
         transform.position = targetTransform.position;
+        currentHolder = newHolder;
+        newHolder.spotOccupied = true;
     }
 }
