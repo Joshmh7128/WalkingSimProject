@@ -5,6 +5,7 @@ using UnityEngine;
 public class StaffHolderScript : MonoBehaviour
 {
     PuzzleManager puzzleManager;
+    [SerializeField] List<ActivateableObject> activateableObjects;
 
     public bool spotOccupied; // set in inspector, are we occupied right now?
 
@@ -28,6 +29,4 @@ public class StaffHolderScript : MonoBehaviour
             }
         }
     }
-
-
 }

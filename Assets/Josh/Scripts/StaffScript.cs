@@ -94,5 +94,6 @@ public class StaffScript : MonoBehaviour
         transform.position = targetTransform.position;
         currentHolder = newHolder;
         newHolder.spotOccupied = true;
+
     }
 }
