@@ -193,6 +193,7 @@ MonoBehaviour:
   puzzleManager: {fileID: 0}
   staffScript: {fileID: 0}
   lineRenderer: {fileID: 34839093965051689}
+  spotLight: {fileID: 0}
   lightOrigin: {fileID: 34839095148653989}
   lightTarget: {fileID: 34839093700471785}
   isOn: 1
