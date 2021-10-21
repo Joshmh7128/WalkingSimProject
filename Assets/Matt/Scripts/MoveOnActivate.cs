@@ -18,6 +18,7 @@ public class MoveOnActivate : ActivateableObject
     Vector3 destination;
     float timer;
 
+    bool activated = false;
     private void Start()
     {
         originalPosition = transform.position + startOffset;
@@ -27,6 +28,9 @@ public class MoveOnActivate : ActivateableObject
 
     public override void ActivateObject()
     {
+        if (activated) return;
+        activated = true;
+
         if (moveRelative)
         {
             destination = transform.position + movement;
