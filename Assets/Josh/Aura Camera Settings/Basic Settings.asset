@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Basic Settings
   m_EditorClassIdentifier: 
   displayVolumetricLightingBuffer: 0
-  frustumGridResolution: {x: 120, y: 64, z: 1024}
+  frustumGridResolution: {x: 120, y: 64, z: 256}
   enableAutomaticStereoResizing: 0
   farClipPlaneDistance: 512
   depthBiasCoefficient: 0.35
@@ -37,7 +37,7 @@ MonoBehaviour:
   EXPERIMENTAL_blurFilterRange: 0
   EXPERIMENTAL_blurFilterType: 0
   EXPERIMENTAL_blurFilterGaussianDeviation: 0.0025
-  enableTemporalReprojection: 1
+  enableTemporalReprojection: 0
   temporalReprojectionFactor: 0.95
   enableOcclusionCulling: 0
   debugOcclusionCulling: 0
