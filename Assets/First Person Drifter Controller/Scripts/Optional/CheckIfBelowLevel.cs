@@ -12,13 +12,19 @@ public class CheckIfBelowLevel : MonoBehaviour
 	public bool fadeInOnReset = true;
 	
 	private Vector3 startingPosition;
+	private CharacterController controller;
 	
 	void Awake()
 	{
 		startingPosition = transform.position;
 	}
-	
-	void Update ()
+
+    private void Start()
+    {
+		controller = GetComponent<CharacterController>();
+	}
+
+    void Update ()
 	{
 		if( transform.position.y < resetBelowThisY )
 		{
@@ -29,9 +35,11 @@ public class CheckIfBelowLevel : MonoBehaviour
 	private void OnBelowLevel()
 	{
 		Debug.Log("Player fell below level");
-	
+
+		controller.enabled = false;
 		// reset the player
 		transform.position = startingPosition;
+		controller.enabled = true;
 		
 		if( fadeInOnReset )
 		{

@@ -12,6 +12,8 @@ public class MoveOnActivate : ActivateableObject
 
     [SerializeField] float moveOverTime;
 
+    [SerializeField] float delay;
+
     Vector3 originalPosition;
     Vector3 destination;
     float timer;
@@ -47,6 +49,7 @@ public class MoveOnActivate : ActivateableObject
 
     IEnumerator MoveRoutine()
     {
+        yield return new WaitForSeconds(delay);
         while (timer < moveOverTime)
         {
             transform.position = Vector3.Lerp(originalPosition, destination, timer / moveOverTime);

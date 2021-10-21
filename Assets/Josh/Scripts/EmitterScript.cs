@@ -22,14 +22,15 @@ public class EmitterScript : MonoBehaviour
             puzzleManager = GameObject.Find("PuzzleManager").GetComponent<PuzzleManager>();
         }
 
-        // update our target
-        lineRenderer.SetPosition(0, lightOrigin.position);
         // target's coloring
         lightTarget.gameObject.GetComponent<Renderer>().material = puzzleManager.emissionMaterials[(int)emitterState];
     }
 
     private void Update()
     {
+        // update our target
+        lineRenderer.SetPosition(0, lightOrigin.position);
+
         // are we on or off?
         if (isOn)
         {
