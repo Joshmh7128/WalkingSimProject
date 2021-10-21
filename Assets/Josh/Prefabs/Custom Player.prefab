@@ -175,6 +175,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4119795821e8fcf4dae286166db619d6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  ourStaff: {fileID: 0}
   cosmeticStaffObjects:
   - {fileID: 8365875896536650602}
   - {fileID: 8365875895842932045}
@@ -182,6 +183,7 @@ MonoBehaviour:
   - {fileID: 8365875896014862584}
   - {fileID: 8365875896381762578}
   - {fileID: 8365875896118227305}
+  collectionTransform: {fileID: 8365875896070323497}
 --- !u!1 &5279627610162197918
 GameObject:
   m_ObjectHideFlags: 0

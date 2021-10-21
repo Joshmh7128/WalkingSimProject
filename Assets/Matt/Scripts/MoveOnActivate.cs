@@ -19,7 +19,8 @@ public class MoveOnActivate : ActivateableObject
     private void Start()
     {
         originalPosition = transform.position + startOffset;
-        ActivateObject();
+        transform.position = originalPosition;
+        //ActivateObject();
     }
 
     public override void ActivateObject()

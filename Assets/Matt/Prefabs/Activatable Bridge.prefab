@@ -48,7 +48,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   startOffset: {x: 0, y: -30, z: 0}
   moveRelative: 1
-  movement: {x: 0, y: 0, z: 0}
+  movement: {x: 0, y: 30, z: 0}
   moveTo: {fileID: 0}
   moveOverTime: 5
 --- !u!1 &6741751088233808940

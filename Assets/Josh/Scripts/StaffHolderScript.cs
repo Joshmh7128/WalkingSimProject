@@ -29,4 +29,13 @@ public class StaffHolderScript : MonoBehaviour
             }
         }
     }
+
+    public void ActivateObjects(PlayerScript.staffStates staffState)
+    {
+        // Could add required staff states to staff holder if we only want certain colors to work
+        foreach (var obj in activateableObjects)
+        {
+            obj.ActivateObject();
+        }
+    }
 }

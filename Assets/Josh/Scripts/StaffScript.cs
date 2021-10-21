@@ -77,8 +77,10 @@ public class StaffScript : MonoBehaviour
                         playerScript.ourStaff = this;
 
                         // place our staff on our player so that our light tracks it
-                        transform.parent = playerScript.gameObject.transform;
-                        transform.position = playerScript.gameObject.transform.position;
+                        transform.parent = playerScript.collectionTransform;
+                        //transform.position = playerScript.gameObject.transform.position;
+                        transform.position = playerScript.cosmeticStaffObjects[0].transform.position;
+                        transform.rotation = playerScript.cosmeticStaffObjects[0].transform.rotation;
                     }
                 }
             }
@@ -92,8 +94,9 @@ public class StaffScript : MonoBehaviour
         transform.parent = null;
         playerScript.StaffState = PlayerScript.staffStates.None;
         transform.position = targetTransform.position;
+        transform.rotation = targetTransform.rotation;
         currentHolder = newHolder;
         newHolder.spotOccupied = true;
-
+        currentHolder.ActivateObjects(staffState);
     }
 }

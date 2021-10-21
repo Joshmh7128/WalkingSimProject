@@ -28,8 +28,7 @@ public class EmitterScript : MonoBehaviour
         lightTarget.gameObject.GetComponent<Renderer>().material = puzzleManager.emissionMaterials[(int)emitterState];
     }
 
-    // runs once per physics update
-    private void FixedUpdate()
+    private void Update()
     {
         // are we on or off?
         if (isOn)
@@ -47,16 +46,20 @@ public class EmitterScript : MonoBehaviour
             lineRenderer.enabled = false;
         }
 
+        if (emitterState != PlayerScript.staffStates.None)
+        {
+            // set our second position
+            lineRenderer.SetPosition(1, lightTarget.position);
+        }
+    }
+
+    // runs once per physics update
+    private void FixedUpdate()
+    {
         if (Physics.Linecast(lightOrigin.position, lightTarget.position, Physics.AllLayers, QueryTriggerInteraction.Ignore))
         { isOn = false; }
 
         if (!Physics.Linecast(lightOrigin.position, lightTarget.position, Physics.AllLayers, QueryTriggerInteraction.Ignore))
         { isOn = true; }
-
-        if (emitterState != PlayerScript.staffStates.None)
-        {   
-            // set our second position
-            lineRenderer.SetPosition(1, lightTarget.position);
-        }
     }
 }
