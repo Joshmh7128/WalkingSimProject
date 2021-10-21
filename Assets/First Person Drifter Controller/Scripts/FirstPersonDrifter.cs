@@ -41,7 +41,7 @@ public class FirstPersonDrifter: MonoBehaviour
  
     private Vector3 moveDirection = Vector3.zero;
     private bool grounded = false;
-    public CharacterController controller;
+    private CharacterController controller;
     private Transform myTransform;
     private float speed;
     private RaycastHit hit;

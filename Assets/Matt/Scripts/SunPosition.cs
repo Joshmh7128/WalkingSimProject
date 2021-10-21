@@ -2,9 +2,9 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class SunPosition : MonoBehaviour
+public class SunPosition : ActivateableObject
 {
-    public bool tickTime = true;
+    public bool tickTime = false;
 
     public float startingPhase = 0.75f;
 
@@ -86,5 +86,10 @@ public class SunPosition : MonoBehaviour
         }
 
         transform.rotation = Quaternion.Euler(altitude * Mathf.Rad2Deg, azimuth * Mathf.Rad2Deg + east, 0f);
+    }
+
+    public override void ActivateObject()
+    {
+        tickTime = true;
     }
 }
