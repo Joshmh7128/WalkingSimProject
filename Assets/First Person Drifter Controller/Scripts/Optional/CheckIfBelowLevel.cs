@@ -11,13 +11,7 @@ public class CheckIfBelowLevel : MonoBehaviour
 	public float resetBelowThisY = -100f;
 	public bool fadeInOnReset = true;
 	
-	private Vector3 startingPosition;
 	private CharacterController controller;
-	
-	void Awake()
-	{
-		startingPosition = transform.position;
-	}
 
     private void Start()
     {
@@ -38,7 +32,7 @@ public class CheckIfBelowLevel : MonoBehaviour
 
 		controller.enabled = false;
 		// reset the player
-		transform.position = startingPosition;
+		transform.position = ResetPositionTrigger.currentResetPosition;
 		controller.enabled = true;
 		
 		if( fadeInOnReset )

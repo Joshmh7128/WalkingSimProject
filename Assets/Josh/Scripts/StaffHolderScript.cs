@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Events;
 
 public class StaffHolderScript : MonoBehaviour
 {
@@ -8,6 +9,10 @@ public class StaffHolderScript : MonoBehaviour
     [SerializeField] List<ActivateableObject> activateableObjects;
 
     public bool spotOccupied; // set in inspector, are we occupied right now?
+
+    public bool oneTimeUse = false;
+
+    public List<UnityEvent> onPlaceActions = new List<UnityEvent>();
 
     private void Start()
     {
@@ -26,6 +31,10 @@ public class StaffHolderScript : MonoBehaviour
             if (puzzleManager.playerScript.StaffState != PlayerScript.staffStates.None)
             {
                 puzzleManager.playerScript.PlaceStaff(transform, this);
+                foreach (UnityEvent action in onPlaceActions)
+                {
+                    action.Invoke();
+                }
             }
         }
     }

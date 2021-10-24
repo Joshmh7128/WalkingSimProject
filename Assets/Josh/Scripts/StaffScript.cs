@@ -5,7 +5,7 @@ using UnityEngine;
 public class StaffScript : MonoBehaviour
 {
     // this script goes on all staffs and tells the player what they are holding and if they can hold it
-    PlayerScript playerScript;
+    public PlayerScript playerScript;
     public PlayerScript.staffStates staffState; // what is our current staff state of the player's possible staff states?
     public bool isHeld; // are we being held by the player?
     public bool canGrab; // can we be picked up?
@@ -13,6 +13,11 @@ public class StaffScript : MonoBehaviour
     public StaffHolderScript currentHolder;
     [SerializeField] EmitterScript ourEmitter;
     // Start is called before the first frame update
+
+    [SerializeField] IconDisplay icon;
+
+    bool locked;
+
     void Start()
     {
         if (puzzleManager == null)
@@ -24,7 +29,10 @@ public class StaffScript : MonoBehaviour
         playerScript = puzzleManager.playerScript;
 
         // set our staff state
-        staffState = ourEmitter.emitterState;
+        if (ourEmitter != null)
+        {
+            staffState = ourEmitter.emitterState;
+        }
         // gameObject.GetComponent<Renderer>().material = puzzleManager.emissionMaterials[(int)staffState];
 
         // we are not being held and can be picked up
@@ -52,9 +60,11 @@ public class StaffScript : MonoBehaviour
 
     private void Update()
     {
+        icon.SetVisible(canGrab && !isHeld && !locked);
+
         if (Input.GetKeyDown(KeyCode.Mouse0))
         {
-            if (canGrab)
+            if (canGrab && !locked)
             {
                 // if the player is holding nothing then we can be picked up
                 if (playerScript.StaffState == PlayerScript.staffStates.None)
@@ -93,10 +103,18 @@ public class StaffScript : MonoBehaviour
         isHeld = false;
         transform.parent = null;
         playerScript.StaffState = PlayerScript.staffStates.None;
-        transform.position = targetTransform.position;
-        transform.rotation = targetTransform.rotation;
         currentHolder = newHolder;
         newHolder.spotOccupied = true;
         currentHolder.ActivateObjects(staffState);
+        if (newHolder.oneTimeUse)
+        {
+            transform.position = targetTransform.position - Vector3.up * 0.5f;
+            locked = true;
+        }
+        else
+        {
+            transform.position = targetTransform.position;
+        }
+        transform.rotation = targetTransform.rotation;
     }
 }

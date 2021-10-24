@@ -14,6 +14,8 @@ public class EmitterScript : MonoBehaviour
     public Transform lightTarget; // the target of our light
     public bool isOn; // is this light on?
 
+    public EmitterScript[] dependsOn;
+
     // runs once on start of game
     private void Start()
     {
@@ -22,8 +24,11 @@ public class EmitterScript : MonoBehaviour
             puzzleManager = GameObject.Find("PuzzleManager").GetComponent<PuzzleManager>();
         }
 
-        // target's coloring
-        lightTarget.gameObject.GetComponent<Renderer>().material = puzzleManager.emissionMaterials[(int)emitterState];
+        if (lightTarget != null)
+        {
+            // target's coloring
+            lightTarget.gameObject.GetComponent<Renderer>().material = puzzleManager.emissionMaterials[(int)emitterState];
+        }
     }
 
     private void Update()
@@ -57,6 +62,16 @@ public class EmitterScript : MonoBehaviour
     // runs once per physics update
     private void FixedUpdate()
     {
+        // Only set on if these other emitters are on
+        foreach (var emitter in dependsOn)
+        {
+            if (!emitter.isOn)
+            {
+                isOn = false;
+                return;
+            }
+        }
+
         if (Physics.Linecast(lightOrigin.position, lightTarget.position, Physics.AllLayers, QueryTriggerInteraction.Ignore))
         { isOn = false; }
 

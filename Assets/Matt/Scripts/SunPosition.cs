@@ -28,6 +28,8 @@ public class SunPosition : ActivateableObject
     // Actual sunrise position will deviate with axialTilt (eg at 10 degrees axial tilt, the sun will rise 10 degrees clockwise from east)
     public float east = 90;
 
+    private float scale = 1f;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -39,7 +41,7 @@ public class SunPosition : ActivateableObject
     {
         if (tickTime)
         {
-            time += Time.deltaTime;
+            time += Time.deltaTime * scale;
         }
             
         if (time >= cycleLength)
@@ -91,5 +93,25 @@ public class SunPosition : ActivateableObject
     public override void ActivateObject()
     {
         tickTime = true;
+    }
+
+    public void SetTimeScale(float s)
+    {
+        scale = s;
+    }
+
+    public void RampAxialTilt(float add)
+    {
+        StartCoroutine(AxialTileRamp(axialTilt + add));
+    }
+
+    IEnumerator AxialTileRamp(float dest)
+    {
+        while (axialTilt < dest)
+        {
+            axialTilt += Time.fixedDeltaTime;
+            yield return new WaitForFixedUpdate();
+        }
+        axialTilt = dest;
     }
 }
