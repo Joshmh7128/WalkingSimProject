@@ -91,6 +91,8 @@ public class StaffScript : MonoBehaviour
                         //transform.position = playerScript.gameObject.transform.position;
                         transform.position = playerScript.cosmeticStaffObjects[0].transform.position;
                         transform.rotation = playerScript.cosmeticStaffObjects[0].transform.rotation;
+
+                        FMODUnity.RuntimeManager.PlayOneShotAttached("event:/Pick Up", gameObject);
                     }
                 }
             }

@@ -14,12 +14,16 @@ public class StaffHolderScript : MonoBehaviour
 
     public List<UnityEvent> onPlaceActions = new List<UnityEvent>();
 
+    GameObject holderBase;
+
     private void Start()
     {
         if (puzzleManager == null)
         {
             puzzleManager = GameObject.Find("PuzzleManager").GetComponent<PuzzleManager>();
         }
+
+        holderBase = transform.Find("Base").gameObject;
     }
 
     private void OnTriggerEnter(Collider other)
@@ -31,6 +35,7 @@ public class StaffHolderScript : MonoBehaviour
             if (puzzleManager.playerScript.StaffState != PlayerScript.staffStates.None)
             {
                 puzzleManager.playerScript.PlaceStaff(transform, this);
+                FMODUnity.RuntimeManager.PlayOneShotAttached("event:/Put Down", holderBase);
                 foreach (UnityEvent action in onPlaceActions)
                 {
                     action.Invoke();

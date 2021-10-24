@@ -30,6 +30,8 @@ public class SunPosition : ActivateableObject
 
     private float scale = 1f;
 
+    private float tiltTarget;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -100,18 +102,19 @@ public class SunPosition : ActivateableObject
         scale = s;
     }
 
-    public void RampAxialTilt(float add)
+    public void RampAxialTilt(float target)
     {
-        StartCoroutine(AxialTileRamp(axialTilt + add));
+        tiltTarget = target;
+        StartCoroutine(AxialTiltRamp());
     }
 
-    IEnumerator AxialTileRamp(float dest)
+    IEnumerator AxialTiltRamp()
     {
-        while (axialTilt < dest)
+        while (axialTilt < tiltTarget)
         {
-            axialTilt += Time.fixedDeltaTime;
+            axialTilt += Time.fixedDeltaTime * 5f;
             yield return new WaitForFixedUpdate();
         }
-        axialTilt = dest;
+        axialTilt = tiltTarget;
     }
 }

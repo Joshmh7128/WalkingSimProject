@@ -76,7 +76,7 @@ public class CameraFade : MonoBehaviour
 					if( instance.m_OnFadeFinish != null )
 						instance.m_OnFadeFinish();
  
-					Die();
+					//Die();
 				}
 				else
 				{
@@ -89,7 +89,7 @@ public class CameraFade : MonoBehaviour
 		if (m_CurrentScreenOverlayColor.a > 0)
 		{			
     		GUI.depth = instance.m_FadeGUIDepth;
-    		GUI.Label(new Rect(-10, -10, Screen.width + 10, Screen.height + 10), instance.m_FadeTexture, instance.m_BackgroundStyle);
+    		GUI.Label(new Rect(-1000, -1000, Screen.width + 1000, Screen.height + 1000), instance.m_FadeTexture, instance.m_BackgroundStyle);
 		}
     }
  

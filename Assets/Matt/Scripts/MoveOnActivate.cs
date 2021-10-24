@@ -18,12 +18,21 @@ public class MoveOnActivate : ActivateableObject
     Vector3 destination;
     float timer;
 
+    private FMOD.Studio.EventInstance instance;
+
     bool activated = false;
     private void Start()
     {
         originalPosition = transform.position + startOffset;
         transform.position = originalPosition;
         //ActivateObject();
+
+        instance = FMODUnity.RuntimeManager.CreateInstance("event:/Stone");
+    }
+
+    private void Update()
+    {
+        instance.set3DAttributes(FMODUnity.RuntimeUtils.To3DAttributes(gameObject));
     }
 
     public override void ActivateObject()
@@ -54,6 +63,7 @@ public class MoveOnActivate : ActivateableObject
     IEnumerator MoveRoutine()
     {
         yield return new WaitForSeconds(delay);
+        instance.start();
         while (timer < moveOverTime)
         {
             transform.position = Vector3.Lerp(originalPosition, destination, timer / moveOverTime);
@@ -61,5 +71,7 @@ public class MoveOnActivate : ActivateableObject
             timer += Time.fixedDeltaTime;
         }
         transform.position = destination;
+        instance.stop(FMOD.Studio.STOP_MODE.ALLOWFADEOUT);
+        instance.release();
     }
 }
