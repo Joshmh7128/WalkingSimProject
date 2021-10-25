@@ -9,7 +9,7 @@
 [LOG] DownMix::init                            : done.
 [LOG] Thread::initThread                       : Init FMOD stream thread. Affinity: 0x8000000000000003, Priority: 0xFFFF7FFB, Stack Size: 98304, Semaphore: No, Sleep Time: 10, Looping: Yes.
 [LOG] Thread::initThread                       : Init FMOD mixer thread. Affinity: 0x8000000000000001, Priority: 0xFFFF7FFA, Stack Size: 81920, Semaphore: No, Sleep Time: 0, Looping: Yes.
-[LOG] AsyncManager::init                       : manager 000001FAD3DFA308 isAsync 0 updatePeriod 0.02
+[LOG] AsyncManager::init                       : manager 000001FAD3DFAF98 isAsync 0 updatePeriod 0.02
 [LOG] AsyncManager::init                       : done
 [LOG] PlaybackSystem::init                     : 
 [LOG] Thread::initThread                       : Init FMOD Studio sample load thread. Affinity: 0x8000000000000003, Priority: 0xFFFF7FFD, Stack Size: 98304, Semaphore: No, Sleep Time: 1, Looping: No.
@@ -20,274 +20,522 @@
 [LOG] Manager::readBank                        : fileversion = 135, compatVersion = 132 (oldest = 44, newest = 135)
 [LOG] Manager::readBank                        : fileversion = 135, compatVersion = 132 (oldest = 44, newest = 135)
 [LOG] PlaybackSystem::acquireMasterBus         : Setting master channel group format to 6
-[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000001F8579C6FE8
-[LOG] SystemI::createSoundInternal             :     Create name='', mode=0x02000202
-[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
-[LOG] SystemI::createSoundInternal             :     exinfo->length             = 134304
-[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 640
-[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
-[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 0000006965D7F058
-[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
-[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
-[LOG] SystemI::createSoundInternal             :     exinfo->useropen           = 00007FFFD83360E0
-[LOG] SystemI::createSoundInternal             :     exinfo->userclose          = 00007FFFD83360B0
-[LOG] SystemI::createSoundInternal             :     exinfo->userread           = 00007FFFD83361B0
-[LOG] SystemI::createSoundInternal             :     exinfo->userseek           = 00007FFFD8336270
-[LOG] SystemI::createSoundInternal             :     exinfo->fileuserdata       = 000001FA133516D8
-[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
-[LOG] SystemI::DSPCodecPoolRegister            :     register codec pool for pool type 5
-[LOG] SystemI::createSoundInternal             :     Sample 0/1: name='342530__sgrowe__light-thud-4', format=5, channels=2, frequency=48000, lengthbytes=9632, lengthpcm=48985, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.037000.
-[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000001F8579C6FE8
+[LOG] SystemI::createSoundInternal             : Create name='', mode=0x02000202
+[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             : exinfo->length             = 134304
+[LOG] SystemI::createSoundInternal             : exinfo->fileoffset         = 640
+[LOG] SystemI::createSoundInternal             : exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 0000006965E7EEF8
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             : exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             : exinfo->useropen           = 00007FFFD83360E0
+[LOG] SystemI::createSoundInternal             : exinfo->userclose          = 00007FFFD83360B0
+[LOG] SystemI::createSoundInternal             : exinfo->userread           = 00007FFFD83361B0
+[LOG] SystemI::createSoundInternal             : exinfo->userseek           = 00007FFFD8336270
+[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 000001FA1411A458
+[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
+[LOG] SystemI::DSPCodecPoolRegister            : register codec pool for pool type 5
+[LOG] SystemI::createSoundInternal             : Sample 0/1: name='342530__sgrowe__light-thud-4', format=5, channels=2, frequency=48000, lengthbytes=9632, lengthpcm=48985, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.037000.
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000001F8579C60B8
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000001F8579C60B8
 [LOG] SystemI::createSound                     : filename = Assets/StreamingAssets/Desktop/SFX.streams.bank : mode 02010082
 [LOG] SystemI::createSound                     : FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
-[LOG] SystemI::createSound                     : setdata soundi = 000001FA18161808 : node = 000001FB89E523C0
-[LOG] SystemI::createSound                     : add node to async list : head = 000001FAD5AA7398.  list count = 0
-[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000001FA18161808
+[LOG] SystemI::createSound                     : setdata soundi = 000001F9DC1F8BA8 : node = 000001FA180F9530
+[LOG] SystemI::createSound                     : add node to async list : head = 000001FAD5C1D038.  list count = 0
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000001F9DC1F8BA8
 [LOG] SystemI::createSoundInternal             :     Create name='Assets/StreamingAssets/Desktop/SFX.streams.bank', mode=0x02010082
 [LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
 [LOG] SystemI::createSoundInternal             :     exinfo->length             = 3150048
 [LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 640
 [LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
-[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 000001FB89E524D0
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 000001FA180F9640
 [LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
 [LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
 [LOG] SystemI::createSoundInternal             :     exinfo->initialseekposition = 2792
 [LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
 [LOG] SystemI::createSoundInternal             :     Stream 0/1: name='578490__postproddog__heavy-stone-door-opens', format=5, channels=2, frequency=48000, lengthbytes=164064, lengthpcm=689632, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.125793.
-[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000001FA18161808
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000001F9DC1F8BA8
 [LOG] SystemI::createSound                     : filename = Assets/StreamingAssets/Desktop/SFX.streams.bank : mode 02010082
 [LOG] SystemI::createSound                     : FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
-[LOG] SystemI::createSound                     : setdata soundi = 000001FA0B006C48 : node = 000001FB89E51D80
-[LOG] SystemI::createSound                     : add node to async list : head = 000001FAD5AA7398.  list count = 0
-[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000001FA0B006C48
+[LOG] SystemI::createSound                     : setdata soundi = 000001F9DC1F8698 : node = 000001FA180F9170
+[LOG] SystemI::createSound                     : add node to async list : head = 000001FAD5C1D038.  list count = 0
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000001F9DC1F8698
 [LOG] SystemI::createSoundInternal             :     Create name='Assets/StreamingAssets/Desktop/SFX.streams.bank', mode=0x02010082
 [LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
 [LOG] SystemI::createSoundInternal             :     exinfo->length             = 3150048
 [LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 640
 [LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
-[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 000001FB89E51E90
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 000001FA180F9280
 [LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
 [LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
 [LOG] SystemI::createSoundInternal             :     exinfo->initialseekposition = 2792
 [LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
 [LOG] SystemI::createSoundInternal             :     Stream 0/1: name='578490__postproddog__heavy-stone-door-opens', format=5, channels=2, frequency=48000, lengthbytes=164064, lengthpcm=689632, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.125793.
-[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000001FA0B006C48
-[LOG] SoundI::release                          : 578490__postproddog__heavy-stone-door-opens (000001FA18161808)
-[LOG] SoundI::release                          :     578490__postproddog__heavy-stone-door-opens (000001FAD5401618)
-[LOG] SoundI::release                          :     578490__postproddog__heavy-stone-door-opens (000001FA152ACD18)
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000001F9DC1F8698
+[LOG] SoundI::release                          : 578490__postproddog__heavy-stone-door-opens (000001F9DC1F8BA8)
+[LOG] SoundI::release                          :     578490__postproddog__heavy-stone-door-opens (000001FAD4352258)
+[LOG] SoundI::release                          :     578490__postproddog__heavy-stone-door-opens (000001FA18161148)
 [LOG] SystemI::createSound                     : filename = Assets/StreamingAssets/Desktop/SFX.streams.bank : mode 02010082
 [LOG] SystemI::createSound                     : FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
-[LOG] SystemI::createSound                     : setdata soundi = 000001FA0B007308 : node = 000001FB89E519C0
-[LOG] SystemI::createSound                     : add node to async list : head = 000001FAD5AA7398.  list count = 0
-[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000001FA0B007308
+[LOG] SystemI::createSound                     : setdata soundi = 000001F9DC1F84E8 : node = 000001FA180F92B0
+[LOG] SystemI::createSound                     : add node to async list : head = 000001FAD5C1D038.  list count = 0
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000001F9DC1F84E8
 [LOG] SystemI::createSoundInternal             :     Create name='Assets/StreamingAssets/Desktop/SFX.streams.bank', mode=0x02010082
 [LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
 [LOG] SystemI::createSoundInternal             :     exinfo->length             = 3150048
 [LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 640
 [LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
-[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 000001FB89E51AD0
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 000001FA180F93C0
 [LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
-[LOG] SystemI::createSound                     :     filename = Assets/StreamingAssets/Desktop/SFX.streams.bank : mode 02010082
 [LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
-[LOG] SystemI::createSound                     :     FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
 [LOG] SystemI::createSoundInternal             :     exinfo->initialseekposition = 2792
-[LOG] SystemI::createSound                     :     setdata soundi = 000001FA0B006FA8 : node = 000001FB89E523C0
-[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
-[LOG] SystemI::createSound                     :     add node to async list : head = 000001FAD5AA7398.  list count = 0
 [LOG] SystemI::createSound                     :     filename = Assets/StreamingAssets/Desktop/SFX.streams.bank : mode 02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
 [LOG] SystemI::createSound                     :     FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
-[LOG] SystemI::createSound                     :     setdata soundi = 000001FA18161808 : node = 000001FB89E51EC0
-[LOG] SystemI::createSound                     :     add node to async list : head = 000001FAD5AA7398.  list count = 1
+[LOG] SystemI::createSound                     :     setdata soundi = 000001FAC6F690F8 : node = 000001FA180F9530
+[LOG] SystemI::createSound                     :     add node to async list : head = 000001FAD5C1D038.  list count = 0
 [LOG] SystemI::createSound                     :     filename = Assets/StreamingAssets/Desktop/SFX.streams.bank : mode 02010082
 [LOG] SystemI::createSound                     :     FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
-[LOG] SystemI::createSound                     :     setdata soundi = 000001FA141C7E38 : node = 000001FB89E52640
+[LOG] SystemI::createSound                     :     setdata soundi = 000001FAC6F68F48 : node = 000001FA180F9030
+[LOG] SystemI::createSound                     :     add node to async list : head = 000001FAD5C1D038.  list count = 1
 [LOG] SystemI::createSoundInternal             :     Stream 0/1: name='578490__postproddog__heavy-stone-door-opens', format=5, channels=2, frequency=48000, lengthbytes=164064, lengthpcm=689632, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.125793.
-[LOG] SystemI::createSound                     :     add node to async list : head = 000001FAD5AA7398.  list count = 2
-[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000001FA0B007308
-[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000001FA0B006FA8
+[LOG] SystemI::createSound                     :     filename = Assets/StreamingAssets/Desktop/SFX.streams.bank : mode 02010082
+[LOG] SystemI::createSound                     :     FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] SystemI::createSound                     :     setdata soundi = 000001FAC6F68888 : node = 000001FADE56A100
+[LOG] SystemI::createSound                     :     add node to async list : head = 000001FAD5C1D038.  list count = 2
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000001F9DC1F84E8
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000001FAC6F690F8
 [LOG] SystemI::createSoundInternal             :     Create name='Assets/StreamingAssets/Desktop/SFX.streams.bank', mode=0x02010082
 [LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
 [LOG] SystemI::createSoundInternal             :     exinfo->length             = 3150048
 [LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 640
 [LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
-[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 000001FB89E524D0
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 000001FA180F9640
 [LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
 [LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
 [LOG] SystemI::createSoundInternal             :     exinfo->initialseekposition = 2792
 [LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
 [LOG] SystemI::createSoundInternal             :     Stream 0/1: name='578490__postproddog__heavy-stone-door-opens', format=5, channels=2, frequency=48000, lengthbytes=164064, lengthpcm=689632, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.125793.
-[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000001FA0B006FA8
-[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000001FA18161808
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000001FAC6F690F8
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000001FAC6F68F48
 [LOG] SystemI::createSoundInternal             :     Create name='Assets/StreamingAssets/Desktop/SFX.streams.bank', mode=0x02010082
 [LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
 [LOG] SystemI::createSoundInternal             :     exinfo->length             = 3150048
 [LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 640
 [LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
-[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 000001FB89E51FD0
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 000001FA180F9140
 [LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
 [LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
 [LOG] SystemI::createSoundInternal             :     exinfo->initialseekposition = 2792
 [LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
 [LOG] SystemI::createSoundInternal             :     Stream 0/1: name='578490__postproddog__heavy-stone-door-opens', format=5, channels=2, frequency=48000, lengthbytes=164064, lengthpcm=689632, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.125793.
-[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000001FA18161808
-[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000001FA141C7E38
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000001FAC6F68F48
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000001FAC6F68888
 [LOG] SystemI::createSoundInternal             :     Create name='Assets/StreamingAssets/Desktop/SFX.streams.bank', mode=0x02010082
 [LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
 [LOG] SystemI::createSoundInternal             :     exinfo->length             = 3150048
 [LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 640
 [LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
-[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 000001FB89E52750
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 000001FADE56A210
 [LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
 [LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
 [LOG] SystemI::createSoundInternal             :     exinfo->initialseekposition = 2792
 [LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
 [LOG] SystemI::createSoundInternal             :     Stream 0/1: name='578490__postproddog__heavy-stone-door-opens', format=5, channels=2, frequency=48000, lengthbytes=164064, lengthpcm=689632, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.125793.
-[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000001FA141C7E38
-[LOG] SoundI::release                          : 578490__postproddog__heavy-stone-door-opens (000001FA0B006C48)
-[LOG] SoundI::release                          :     578490__postproddog__heavy-stone-door-opens (000001FA178E3F78)
-[LOG] SoundI::release                          :     578490__postproddog__heavy-stone-door-opens (000001F8579C45B8)
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000001FAC6F68888
+[LOG] SoundI::release                          : 578490__postproddog__heavy-stone-door-opens (000001F9DC1F8698)
+[LOG] SoundI::release                          :     578490__postproddog__heavy-stone-door-opens (000001FAD4352DB8)
+[LOG] SoundI::release                          :     578490__postproddog__heavy-stone-door-opens (000001FA18161658)
 [LOG] SystemI::createSound                     : filename = Assets/StreamingAssets/Desktop/SFX.streams.bank : mode 02010082
 [LOG] SystemI::createSound                     : FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
-[LOG] SystemI::createSound                     : setdata soundi = 000001FA141C7C88 : node = 000001FB89E51B00
-[LOG] SystemI::createSound                     : add node to async list : head = 000001FAD5AA7398.  list count = 0
-[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000001FA141C7C88
+[LOG] SystemI::createSound                     : setdata soundi = 000001F9DC1F9268 : node = 000001FADE56A4C0
+[LOG] SystemI::createSound                     : add node to async list : head = 000001FAD5C1D038.  list count = 0
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000001F9DC1F9268
 [LOG] SystemI::createSoundInternal             :     Create name='Assets/StreamingAssets/Desktop/SFX.streams.bank', mode=0x02010082
 [LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
 [LOG] SystemI::createSoundInternal             :     exinfo->length             = 3150048
 [LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 640
 [LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
-[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 000001FB89E51C10
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 000001FADE56A5D0
 [LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
 [LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
 [LOG] SystemI::createSoundInternal             :     exinfo->initialseekposition = 2792
 [LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
 [LOG] SystemI::createSoundInternal             :     Stream 0/1: name='578490__postproddog__heavy-stone-door-opens', format=5, channels=2, frequency=48000, lengthbytes=164064, lengthpcm=689632, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.125793.
-[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000001FA141C7C88
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000001F9DC1F9268
 [LOG] SystemI::createSound                     : filename = Assets/StreamingAssets/Desktop/SFX.streams.bank : mode 02010082
 [LOG] SystemI::createSound                     : FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
-[LOG] SystemI::createSound                     : setdata soundi = 000001FA141C7778 : node = 000001FB89E51D80
-[LOG] SystemI::createSound                     : add node to async list : head = 000001FAD5AA7398.  list count = 0
-[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000001FA141C7778
+[LOG] SystemI::createSound                     : setdata soundi = 000001FAD2D09008 : node = 000001FADE56A380
+[LOG] SystemI::createSound                     : add node to async list : head = 000001FAD5C1D038.  list count = 0
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000001FAD2D09008
 [LOG] SystemI::createSoundInternal             :     Create name='Assets/StreamingAssets/Desktop/SFX.streams.bank', mode=0x02010082
 [LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
 [LOG] SystemI::createSoundInternal             :     exinfo->length             = 3150048
 [LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 640
 [LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
-[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 000001FB89E51E90
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 000001FADE56A490
 [LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
-[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
 [LOG] SystemI::createSound                     :     filename = Assets/StreamingAssets/Desktop/SFX.streams.bank : mode 02010082
-[LOG] SystemI::createSoundInternal             :     exinfo->initialseekposition = 2792
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
 [LOG] SystemI::createSound                     :     FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekposition = 2792
 [LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
-[LOG] SystemI::createSound                     :     setdata soundi = 000001FA0B006A98 : node = 000001FB89E52000
-[LOG] SystemI::createSound                     :     add node to async list : head = 000001FAD5AA7398.  list count = 0
+[LOG] SystemI::createSound                     :     setdata soundi = 000001FAD2D08798 : node = 000001FADE56A600
+[LOG] SystemI::createSound                     :     add node to async list : head = 000001FAD5C1D038.  list count = 0
 [LOG] SystemI::createSound                     :     filename = Assets/StreamingAssets/Desktop/SFX.streams.bank : mode 02010082
 [LOG] SystemI::createSound                     :     FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
-[LOG] SystemI::createSound                     :     setdata soundi = 000001FB8914E3D8 : node = 000001FB89E52500
-[LOG] SystemI::createSound                     :     add node to async list : head = 000001FAD5AA7398.  list count = 1
+[LOG] SystemI::createSound                     :     setdata soundi = 000001FAD2D08288 : node = 000001FADE56AEC0
+[LOG] SystemI::createSound                     :     add node to async list : head = 000001FAD5C1D038.  list count = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='578490__postproddog__heavy-stone-door-opens', format=5, channels=2, frequency=48000, lengthbytes=164064, lengthpcm=689632, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.125793.
 [LOG] SystemI::createSound                     :     filename = Assets/StreamingAssets/Desktop/SFX.streams.bank : mode 02010082
-[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='578490__postproddog__heavy-stone-door-opens', format=5, channels=2, frequency=48000, lengthbytes=164064, lengthpcm=689632, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.125793.
 [LOG] SystemI::createSound                     :     FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
-[LOG] SystemI::createSound                     :     setdata soundi = 000001FB8914E588 : node = 000001FAC24F4D20
-[LOG] SystemI::createSound                     :     add node to async list : head = 000001FAD5AA7398.  list count = 2
-[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000001FA141C7778
-[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000001FA0B006A98
+[LOG] SystemI::createSound                     :     setdata soundi = 000001FA1214C738 : node = 000001FADE56A740
+[LOG] SystemI::createSound                     :     add node to async list : head = 000001FAD5C1D038.  list count = 2
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000001FAD2D09008
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000001FAD2D08798
 [LOG] SystemI::createSoundInternal             :     Create name='Assets/StreamingAssets/Desktop/SFX.streams.bank', mode=0x02010082
 [LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
 [LOG] SystemI::createSoundInternal             :     exinfo->length             = 3150048
 [LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 640
 [LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
-[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 000001FB89E52110
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 000001FADE56A710
 [LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
 [LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
 [LOG] SystemI::createSoundInternal             :     exinfo->initialseekposition = 2792
 [LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
 [LOG] SystemI::createSoundInternal             :     Stream 0/1: name='578490__postproddog__heavy-stone-door-opens', format=5, channels=2, frequency=48000, lengthbytes=164064, lengthpcm=689632, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.125793.
-[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000001FA0B006A98
-[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000001FB8914E3D8
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000001FAD2D08798
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000001FAD2D08288
 [LOG] SystemI::createSoundInternal             :     Create name='Assets/StreamingAssets/Desktop/SFX.streams.bank', mode=0x02010082
 [LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
 [LOG] SystemI::createSoundInternal             :     exinfo->length             = 3150048
 [LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 640
 [LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
-[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 000001FB89E52610
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 000001FADE56AFD0
 [LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
 [LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
 [LOG] SystemI::createSoundInternal             :     exinfo->initialseekposition = 2792
 [LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
 [LOG] SystemI::createSoundInternal             :     Stream 0/1: name='578490__postproddog__heavy-stone-door-opens', format=5, channels=2, frequency=48000, lengthbytes=164064, lengthpcm=689632, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.125793.
-[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000001FB8914E3D8
-[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000001FB8914E588
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000001FAD2D08288
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000001FA1214C738
 [LOG] SystemI::createSoundInternal             :     Create name='Assets/StreamingAssets/Desktop/SFX.streams.bank', mode=0x02010082
 [LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
 [LOG] SystemI::createSoundInternal             :     exinfo->length             = 3150048
 [LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 640
 [LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
-[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 000001FAC24F4E30
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 000001FADE56A850
 [LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
 [LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
 [LOG] SystemI::createSoundInternal             :     exinfo->initialseekposition = 2792
 [LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
 [LOG] SystemI::createSoundInternal             :     Stream 0/1: name='578490__postproddog__heavy-stone-door-opens', format=5, channels=2, frequency=48000, lengthbytes=164064, lengthpcm=689632, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.125793.
-[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000001FB8914E588
-[LOG] SoundI::release                          : 578490__postproddog__heavy-stone-door-opens (000001FA141C7E38)
-[LOG] SoundI::release                          :     578490__postproddog__heavy-stone-door-opens (000001FA178E4118)
-[LOG] SoundI::release                          :     578490__postproddog__heavy-stone-door-opens (000001F8579C2758)
-[LOG] SoundI::release                          : 578490__postproddog__heavy-stone-door-opens (000001FA18161808)
-[LOG] SoundI::release                          :     578490__postproddog__heavy-stone-door-opens (000001FA178E2718)
-[LOG] SoundI::release                          :     578490__postproddog__heavy-stone-door-opens (000001F8579C40A8)
-[LOG] SoundI::release                          : 578490__postproddog__heavy-stone-door-opens (000001FA0B006FA8)
-[LOG] SoundI::release                          :     578490__postproddog__heavy-stone-door-opens (000001FA178E7518)
-[LOG] SoundI::release                          :     578490__postproddog__heavy-stone-door-opens (000001F8579C23F8)
-[LOG] SoundI::release                          : 578490__postproddog__heavy-stone-door-opens (000001FA0B007308)
-[LOG] SoundI::release                          :     578490__postproddog__heavy-stone-door-opens (000001FA178E69B8)
-[LOG] SoundI::release                          :     578490__postproddog__heavy-stone-door-opens (000001F8579C6418)
-[LOG] SoundI::release                          : 578490__postproddog__heavy-stone-door-opens (000001FB8914E588)
-[LOG] SoundI::release                          :     578490__postproddog__heavy-stone-door-opens (000001FA178E9DB8)
-[LOG] SoundI::release                          :     578490__postproddog__heavy-stone-door-opens (000001F8579C6778)
-[LOG] SoundI::release                          : 578490__postproddog__heavy-stone-door-opens (000001FB8914E3D8)
-[LOG] SoundI::release                          :     578490__postproddog__heavy-stone-door-opens (000001FA178E98D8)
-[LOG] SoundI::release                          :     578490__postproddog__heavy-stone-door-opens (000001F8579C2C68)
-[LOG] SoundI::release                          : 578490__postproddog__heavy-stone-door-opens (000001FA0B006A98)
-[LOG] SoundI::release                          :     578490__postproddog__heavy-stone-door-opens (000001FA178E4458)
-[LOG] SoundI::release                          :     578490__postproddog__heavy-stone-door-opens (000001F8579C5188)
-[LOG] SoundI::release                          : 578490__postproddog__heavy-stone-door-opens (000001FA141C7778)
-[LOG] SoundI::release                          :     578490__postproddog__heavy-stone-door-opens (000001FA178E42B8)
-[LOG] SoundI::release                          :     578490__postproddog__heavy-stone-door-opens (000001F8579C74F8)
-[LOG] SoundI::release                          : 578490__postproddog__heavy-stone-door-opens (000001FA141C7C88)
-[LOG] SoundI::release                          :     578490__postproddog__heavy-stone-door-opens (000001FA178E3F78)
-[LOG] SoundI::release                          :     578490__postproddog__heavy-stone-door-opens (000001F8579C45B8)
-[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000001F8579C2AB8
-[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000001F8579C2AB8
-[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000001F8579C39E8
-[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000001F8579C39E8
-[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000001F8579C1EE8
-[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000001F8579C1EE8
-[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000001F8579C1EE8
-[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000001F8579C1EE8
-[LOG] SoundI::release                          : Solarity_Pad-001 (000001FA18160DE8)
-[LOG] SoundI::release                          :     Solarity_Pad-001 (000001FA178E6198)
-[LOG] SoundI::release                          :     Solarity_Pad-001 (000001F8579C3688)
-[LOG] SoundI::release                          : Solarity_Lead1-001 (000001FA1815FEB8)
-[LOG] SoundI::release                          :     Solarity_Lead1-001 (000001FA178E3A98)
-[LOG] SoundI::release                          :     Solarity_Lead1-001 (000001F8579C2AB8)
-[LOG] SoundI::release                          : Solarity_Lead2-001 (000001FA1815F7F8)
-[LOG] SoundI::release                          :     Solarity_Lead2-001 (000001FA178E1EF8)
-[LOG] SoundI::release                          :     Solarity_Lead2-001 (000001F8579C6FE8)
-[LOG] SoundI::release                          : Solarity_Bass-001 (000001FA18160728)
-[LOG] SoundI::release                          :     Solarity_Bass-001 (000001FA178E3758)
-[LOG] SoundI::release                          :     Solarity_Bass-001 (000001F8579C60B8)
-[LOG] SoundI::release                          : Ambience, Seashore, Constant Sea Wash, Cliff Perspective, No Voices, Sunset-Stereo_01 (000001FA18162588)
-[LOG] SoundI::release                          :     Ambience, Seashore, Constant Sea Wash, Cliff Perspective, No Voices, Sunset-Stereo_01 (000001FA178E64D8)
-[LOG] SoundI::release                          :     Ambience, Seashore, Constant Sea Wash, Cliff Perspective, No Voices, Sunset-Stereo_01 (000001F8579C39E8)
-[LOG] SoundI::release                          : Ambience, Seashore, Constant Sea Wash, Cliff Perspective, No Voices, Sunset-Stereo_01 (000001FA181612F8)
-[LOG] SoundI::release                          :     Ambience, Seashore, Constant Sea Wash, Cliff Perspective, No Voices, Sunset-Stereo_01 (000001FA178E3DD8)
-[LOG] SoundI::release                          :     Ambience, Seashore, Constant Sea Wash, Cliff Perspective, No Voices, Sunset-Stereo_01 (000001F8579C1EE8)
-[LOG] SoundI::release                          :  (000001FAD3459648)
-[LOG] SoundI::release                          :     363122__el-bee__landmass-earth-rumble (000001F9DE061738)
-[LOG] SoundI::release                          :  (000001FAD3459368)
-[LOG] SoundI::release                          :     342530__sgrowe__light-thud-4 (000001F9DE0618D8)
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000001FA1214C738
+[LOG] SoundI::release                          : 578490__postproddog__heavy-stone-door-opens (000001FAC6F68888)
+[LOG] SoundI::release                          :     578490__postproddog__heavy-stone-door-opens (000001FAD4352A78)
+[LOG] SoundI::release                          :     578490__postproddog__heavy-stone-door-opens (000001FA18162078)
+[LOG] SoundI::release                          : 578490__postproddog__heavy-stone-door-opens (000001FAC6F68F48)
+[LOG] SoundI::release                          :     578490__postproddog__heavy-stone-door-opens (000001FAD4352738)
+[LOG] SoundI::release                          :     578490__postproddog__heavy-stone-door-opens (000001FA181614A8)
+[LOG] SoundI::release                          : 578490__postproddog__heavy-stone-door-opens (000001FAC6F690F8)
+[LOG] SoundI::release                          :     578490__postproddog__heavy-stone-door-opens (000001FAD43528D8)
+[LOG] SoundI::release                          :     578490__postproddog__heavy-stone-door-opens (000001FA1815F7F8)
+[LOG] SoundI::release                          : 578490__postproddog__heavy-stone-door-opens (000001F9DC1F84E8)
+[LOG] SoundI::release                          :     578490__postproddog__heavy-stone-door-opens (000001FAD4352C18)
+[LOG] SoundI::release                          :     578490__postproddog__heavy-stone-door-opens (000001FA1815FD08)
+[LOG] SoundI::release                          : 578490__postproddog__heavy-stone-door-opens (000001FA1214C738)
+[LOG] SoundI::release                          :     578490__postproddog__heavy-stone-door-opens (000001FAD4352598)
+[LOG] SoundI::release                          :     578490__postproddog__heavy-stone-door-opens (000001FA18161808)
+[LOG] SoundI::release                          : 578490__postproddog__heavy-stone-door-opens (000001FAD2D08288)
+[LOG] SoundI::release                          :     578490__postproddog__heavy-stone-door-opens (000001FAD43523F8)
+[LOG] SoundI::release                          :     578490__postproddog__heavy-stone-door-opens (000001FA1815F498)
+[LOG] SoundI::release                          : 578490__postproddog__heavy-stone-door-opens (000001FAD2D08798)
+[LOG] SoundI::release                          :     578490__postproddog__heavy-stone-door-opens (000001FAD4352258)
+[LOG] SoundI::release                          :     578490__postproddog__heavy-stone-door-opens (000001FA18161D18)
+[LOG] SoundI::release                          : 578490__postproddog__heavy-stone-door-opens (000001FAD2D09008)
+[LOG] SoundI::release                          :     578490__postproddog__heavy-stone-door-opens (000001FAD4352DB8)
+[LOG] SoundI::release                          :     578490__postproddog__heavy-stone-door-opens (000001FA18160728)
+[LOG] SoundI::release                          : 578490__postproddog__heavy-stone-door-opens (000001F9DC1F9268)
+[LOG] SoundI::release                          :     578490__postproddog__heavy-stone-door-opens (000001FAD43520B8)
+[LOG] SoundI::release                          :     578490__postproddog__heavy-stone-door-opens (000001FA18160C38)
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000001F8579C2248
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000001F8579C2248
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000001F8579C40A8
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000001F8579C40A8
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000001F8579C7858
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000001F8579C7858
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000001F8579C7858
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000001F8579C7858
+[LOG] SystemI::createSound                     : filename = Assets/StreamingAssets/Desktop/SFX.streams.bank : mode 02010082
+[LOG] SystemI::createSound                     : FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] SystemI::createSound                     : setdata soundi = 000001FAC8F0CE98 : node = 000001F857502580
+[LOG] SystemI::createSound                     : add node to async list : head = 000001FAD5C1D038.  list count = 0
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000001FAC8F0CE98
+[LOG] SystemI::createSound                     : filename = Assets/StreamingAssets/Desktop/SFX.streams.bank : mode 02010082
+[LOG] SystemI::createSoundInternal             :     Create name='Assets/StreamingAssets/Desktop/SFX.streams.bank', mode=0x02010082
+[LOG] SystemI::createSound                     :     FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 3150048
+[LOG] SystemI::createSound                     :     setdata soundi = 000001FAC8F0DA68 : node = 000001F8575026C0
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 640
+[LOG] SystemI::createSound                     :     add node to async list : head = 000001FAD5C1D038.  list count = 0
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 000001F857502690
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekposition = 8000
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='Ambience, Seashore, Constant Sea Wash, Cliff Perspective, No Voices, Sunset-Stereo_01', format=5, channels=2, frequency=48000, lengthbytes=2983680, lengthpcm=11472000, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.087982.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000001FAC8F0CE98
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000001FAC8F0DA68
+[LOG] SystemI::createSoundInternal             :     Create name='Assets/StreamingAssets/Desktop/SFX.streams.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 3150048
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 640
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 000001F8575027D0
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekposition = 8000
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='Ambience, Seashore, Constant Sea Wash, Cliff Perspective, No Voices, Sunset-Stereo_01', format=5, channels=2, frequency=48000, lengthbytes=2983680, lengthpcm=11472000, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.087982.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000001FAC8F0DA68
+[LOG] SoundI::release                          : Ambience, Seashore, Constant Sea Wash, Cliff Perspective, No Voices, Sunset-Stereo_01 (000001FAC9972B18)
+[LOG] SoundI::release                          :     Ambience, Seashore, Constant Sea Wash, Cliff Perspective, No Voices, Sunset-Stereo_01 (000001FA178E69B8)
+[LOG] SoundI::release                          :     Ambience, Seashore, Constant Sea Wash, Cliff Perspective, No Voices, Sunset-Stereo_01 (000001F8579C7858)
+[LOG] SoundI::release                          : Ambience, Seashore, Constant Sea Wash, Cliff Perspective, No Voices, Sunset-Stereo_01 (000001FA1372E5F8)
+[LOG] SoundI::release                          :     Ambience, Seashore, Constant Sea Wash, Cliff Perspective, No Voices, Sunset-Stereo_01 (000001FA178E3A98)
+[LOG] SoundI::release                          :     Ambience, Seashore, Constant Sea Wash, Cliff Perspective, No Voices, Sunset-Stereo_01 (000001F8579C40A8)
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000001FA1815F498
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000001FA1815F498
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000001F8579C4768
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000001F8579C4768
+[LOG] SystemI::createSound                     : filename = Assets/StreamingAssets/Desktop/Music.streams.bank : mode 02010082
+[LOG] SystemI::createSound                     : FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] SystemI::createSound                     : setdata soundi = 000001FAD5FB2718 : node = 000001F857502800
+[LOG] SystemI::createSound                     : add node to async list : head = 000001FAD5C1D038.  list count = 0
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000001FAD5FB2718
+[LOG] SystemI::createSoundInternal             :     Create name='Assets/StreamingAssets/Desktop/Music.streams.bank', mode=0x02010082
+[LOG] SystemI::createSound                     : filename = Assets/StreamingAssets/Desktop/Music.streams.bank : mode 02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
+[LOG] SystemI::createSound                     :     FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 8166688
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 768
+[LOG] SystemI::createSound                     :     setdata soundi = 000001FA17FB7A28 : node = 000001F857502940
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSound                     :     add node to async list : head = 000001FAD5C1D038.  list count = 0
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 000001F857502910
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekposition = 120000
+[LOG] SystemI::createSound                     :     filename = Assets/StreamingAssets/Desktop/Music.streams.bank : mode 02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSound                     :     FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] SystemI::createSound                     :     setdata soundi = 000001FA17FB8448 : node = 000001F857502A80
+[LOG] SystemI::createSound                     :     add node to async list : head = 000001FAD5C1D038.  list count = 1
+[LOG] SystemI::createSound                     :     filename = Assets/StreamingAssets/Desktop/Music.streams.bank : mode 02010082
+[LOG] SystemI::createSound                     :     FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] SystemI::createSound                     :     setdata soundi = 000001FA17FB71B8 : node = 000001F857502BC0
+[LOG] SystemI::createSound                     :     add node to async list : head = 000001FAD5C1D038.  list count = 2
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='Solarity_Bass-001', format=5, channels=2, frequency=48000, lengthbytes=1568928, lengthpcm=13165714, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.373657.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000001FAD5FB2718
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000001FA17FB7A28
+[LOG] SystemI::createSoundInternal             :     Create name='Assets/StreamingAssets/Desktop/Music.streams.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 8166688
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 768
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 000001F857502A50
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekposition = 120000
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='Solarity_Lead2-001', format=5, channels=2, frequency=48000, lengthbytes=1995840, lengthpcm=13165714, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.200409.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000001FA17FB7A28
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000001FA17FB8448
+[LOG] SystemI::createSoundInternal             :     Create name='Assets/StreamingAssets/Desktop/Music.streams.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 8166688
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 768
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 000001F857502B90
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekposition = 120000
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='Solarity_Lead1-001', format=5, channels=2, frequency=48000, lengthbytes=2110848, lengthpcm=13165714, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.313751.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000001FA17FB8448
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000001FA17FB71B8
+[LOG] SystemI::createSoundInternal             :     Create name='Assets/StreamingAssets/Desktop/Music.streams.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 8166688
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 768
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 000001F857502CD0
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekposition = 120000
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='Solarity_Pad-001', format=5, channels=2, frequency=48000, lengthbytes=2482016, lengthpcm=13165714, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.193970.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000001FA17FB71B8
+[LOG] SoundI::release                          : Solarity_Pad-001 (000001FA1372E448)
+[LOG] SoundI::release                          :     Solarity_Pad-001 (000001FA178E64D8)
+[LOG] SoundI::release                          :     Solarity_Pad-001 (000001F8579C4C78)
+[LOG] SoundI::release                          : Solarity_Lead1-001 (000001F9DDEA1558)
+[LOG] SoundI::release                          :     Solarity_Lead1-001 (000001FA178E3758)
+[LOG] SoundI::release                          :     Solarity_Lead1-001 (000001F8579C2248)
+[LOG] SoundI::release                          : Solarity_Lead2-001 (000001F9DDEA1048)
+[LOG] SoundI::release                          :     Solarity_Lead2-001 (000001FA178E2718)
+[LOG] SoundI::release                          :     Solarity_Lead2-001 (000001F8579C60B8)
+[LOG] SoundI::release                          : Solarity_Bass-001 (000001F8579C6418)
+[LOG] SoundI::release                          :     Solarity_Bass-001 (000001FA178E6198)
+[LOG] SoundI::release                          :     Solarity_Bass-001 (000001F8579C4768)
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000001FA1815F498
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000001FA1815F498
+[LOG] SystemI::createSound                     : filename = Assets/StreamingAssets/Desktop/Music.streams.bank : mode 02010082
+[LOG] SystemI::createSound                     : FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] SystemI::createSound                     : setdata soundi = 000001FAD65693C8 : node = 000001F9E59F53E0
+[LOG] SystemI::createSound                     : add node to async list : head = 000001FAD5C1D038.  list count = 0
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000001FAD65693C8
+[LOG] SystemI::createSound                     : filename = Assets/StreamingAssets/Desktop/Music.streams.bank : mode 02010082
+[LOG] SystemI::createSoundInternal             :     Create name='Assets/StreamingAssets/Desktop/Music.streams.bank', mode=0x02010082
+[LOG] SystemI::createSound                     :     FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
+[LOG] SystemI::createSound                     :     setdata soundi = 000001F857918238 : node = 000001F9E59F5520
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 8166688
+[LOG] SystemI::createSound                     :     add node to async list : head = 000001FAD5C1D038.  list count = 0
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 768
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSound                     :     filename = Assets/StreamingAssets/Desktop/Music.streams.bank : mode 02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 000001F9E59F54F0
+[LOG] SystemI::createSound                     :     FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSound                     :     setdata soundi = 000001F8579174B8 : node = 000001F9E59F5660
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSound                     :     add node to async list : head = 000001FAD5C1D038.  list count = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekposition = 120000
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSound                     :     filename = Assets/StreamingAssets/Desktop/Music.streams.bank : mode 02010082
+[LOG] SystemI::createSound                     :     FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] SystemI::createSound                     :     setdata soundi = 000001F857917818 : node = 000001F9E59F5160
+[LOG] SystemI::createSound                     :     add node to async list : head = 000001FAD5C1D038.  list count = 2
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='Solarity_Bass-001', format=5, channels=2, frequency=48000, lengthbytes=1568928, lengthpcm=13165714, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.373657.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000001FAD65693C8
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000001F857918238
+[LOG] SystemI::createSoundInternal             :     Create name='Assets/StreamingAssets/Desktop/Music.streams.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 8166688
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 768
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 000001F9E59F5630
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekposition = 120000
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='Solarity_Lead2-001', format=5, channels=2, frequency=48000, lengthbytes=1995840, lengthpcm=13165714, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.200409.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000001F857918238
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000001F8579174B8
+[LOG] SystemI::createSoundInternal             :     Create name='Assets/StreamingAssets/Desktop/Music.streams.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 8166688
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 768
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 000001F9E59F5770
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekposition = 120000
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='Solarity_Lead1-001', format=5, channels=2, frequency=48000, lengthbytes=2110848, lengthpcm=13165714, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.313751.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000001F8579174B8
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000001F857917818
+[LOG] SystemI::createSoundInternal             :     Create name='Assets/StreamingAssets/Desktop/Music.streams.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 8166688
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 768
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 000001F9E59F5270
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekposition = 120000
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='Solarity_Pad-001', format=5, channels=2, frequency=48000, lengthbytes=2482016, lengthpcm=13165714, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.193970.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000001F857917818
+[LOG] SoundI::release                          : Solarity_Pad-001 (000001FA17FB71B8)
+[LOG] SoundI::release                          :     Solarity_Pad-001 (000001FADE56A768)
+[LOG] SoundI::release                          :     Solarity_Pad-001 (000001FA18160DE8)
+[LOG] SoundI::release                          : Solarity_Lead1-001 (000001FA17FB8448)
+[LOG] SoundI::release                          :     Solarity_Lead1-001 (000001FADE56A5C8)
+[LOG] SoundI::release                          :     Solarity_Lead1-001 (000001FA18160C38)
+[LOG] SoundI::release                          : Solarity_Lead2-001 (000001FA17FB7A28)
+[LOG] SoundI::release                          :     Solarity_Lead2-001 (000001FADE56AC48)
+[LOG] SoundI::release                          :     Solarity_Lead2-001 (000001FA18160728)
+[LOG] SoundI::release                          : Solarity_Bass-001 (000001FAD5FB2718)
+[LOG] SoundI::release                          :     Solarity_Bass-001 (000001FADE56AAA8)
+[LOG] SoundI::release                          :     Solarity_Bass-001 (000001FA1815FEB8)
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000001FA18161148
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000001FA18161148
+[LOG] SystemI::createSound                     : filename = Assets/StreamingAssets/Desktop/SFX.streams.bank : mode 02010082
+[LOG] SystemI::createSound                     : FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] SystemI::createSound                     : setdata soundi = 000001F8579179C8 : node = 000001FAC6F69660
+[LOG] SystemI::createSound                     : add node to async list : head = 000001FAD5C1D038.  list count = 0
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000001F8579179C8
+[LOG] SystemI::createSound                     : filename = Assets/StreamingAssets/Desktop/SFX.streams.bank : mode 02010082
+[LOG] SystemI::createSoundInternal             :     Create name='Assets/StreamingAssets/Desktop/SFX.streams.bank', mode=0x02010082
+[LOG] SystemI::createSound                     :     FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
+[LOG] SystemI::createSound                     :     setdata soundi = 000001FAD2D08CA8 : node = 000001FAC6F68B20
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 3150048
+[LOG] SystemI::createSound                     :     add node to async list : head = 000001FAD5C1D038.  list count = 0
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 640
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 000001FAC6F69770
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekposition = 8000
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='Ambience, Seashore, Constant Sea Wash, Cliff Perspective, No Voices, Sunset-Stereo_01', format=5, channels=2, frequency=48000, lengthbytes=2983680, lengthpcm=11472000, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.087982.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000001F8579179C8
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000001FAD2D08CA8
+[LOG] SystemI::createSoundInternal             :     Create name='Assets/StreamingAssets/Desktop/SFX.streams.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 3150048
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 640
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 000001FAC6F68C30
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekposition = 8000
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='Ambience, Seashore, Constant Sea Wash, Cliff Perspective, No Voices, Sunset-Stereo_01', format=5, channels=2, frequency=48000, lengthbytes=2983680, lengthpcm=11472000, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.087982.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000001FAD2D08CA8
+[LOG] SoundI::release                          : Ambience, Seashore, Constant Sea Wash, Cliff Perspective, No Voices, Sunset-Stereo_01 (000001FAC8F0DA68)
+[LOG] SoundI::release                          :     Ambience, Seashore, Constant Sea Wash, Cliff Perspective, No Voices, Sunset-Stereo_01 (000001FADE56A428)
+[LOG] SoundI::release                          :     Ambience, Seashore, Constant Sea Wash, Cliff Perspective, No Voices, Sunset-Stereo_01 (000001FA1815F498)
+[LOG] SoundI::release                          : Ambience, Seashore, Constant Sea Wash, Cliff Perspective, No Voices, Sunset-Stereo_01 (000001FAC8F0CE98)
+[LOG] SoundI::release                          :     Ambience, Seashore, Constant Sea Wash, Cliff Perspective, No Voices, Sunset-Stereo_01 (000001FADE56A908)
+[LOG] SoundI::release                          :     Ambience, Seashore, Constant Sea Wash, Cliff Perspective, No Voices, Sunset-Stereo_01 (000001FA1815FD08)
+[LOG] SoundI::release                          : Solarity_Pad-001 (000001F857917818)
+[LOG] SoundI::release                          :     Solarity_Pad-001 (000001FAD434E3B8)
+[LOG] SoundI::release                          :     Solarity_Pad-001 (000001FA181628E8)
+[LOG] SoundI::release                          : Solarity_Lead1-001 (000001F8579174B8)
+[LOG] SoundI::release                          :     Solarity_Lead1-001 (000001FADE56A288)
+[LOG] SoundI::release                          :     Solarity_Lead1-001 (000001FA181612F8)
+[LOG] SoundI::release                          : Solarity_Lead2-001 (000001F857918238)
+[LOG] SoundI::release                          :     Solarity_Lead2-001 (000001FADE56A0E8)
+[LOG] SoundI::release                          :     Solarity_Lead2-001 (000001FA18161658)
+[LOG] SoundI::release                          : Solarity_Bass-001 (000001FAD65693C8)
+[LOG] SoundI::release                          :     Solarity_Bass-001 (000001FADE56ADE8)
+[LOG] SoundI::release                          :     Solarity_Bass-001 (000001FA18161148)
+[LOG] SoundI::release                          : Ambience, Seashore, Constant Sea Wash, Cliff Perspective, No Voices, Sunset-Stereo_01 (000001F8579179C8)
+[LOG] SoundI::release                          :     Ambience, Seashore, Constant Sea Wash, Cliff Perspective, No Voices, Sunset-Stereo_01 (000001FAD434E6F8)
+[LOG] SoundI::release                          :     Ambience, Seashore, Constant Sea Wash, Cliff Perspective, No Voices, Sunset-Stereo_01 (000001FA181614A8)
+[LOG] SoundI::release                          : Ambience, Seashore, Constant Sea Wash, Cliff Perspective, No Voices, Sunset-Stereo_01 (000001FAD2D08CA8)
+[LOG] SoundI::release                          :     Ambience, Seashore, Constant Sea Wash, Cliff Perspective, No Voices, Sunset-Stereo_01 (000001FAD434E898)
+[LOG] SoundI::release                          :     Ambience, Seashore, Constant Sea Wash, Cliff Perspective, No Voices, Sunset-Stereo_01 (000001FA18161808)
+[LOG] SoundI::release                          :  (000001F9DC1D19B8)
+[LOG] SoundI::release                          :     363122__el-bee__landmass-earth-rumble (000001F85763AFF8)
+[LOG] SoundI::release                          :  (000001FADAF5C8C8)
+[LOG] SoundI::release                          :     342530__sgrowe__light-thud-4 (000001FAD5942B38)
 [LOG] Thread::callback                         : FMOD Studio update thread finished.
 [LOG] Thread::callback                         : FMOD Studio bank load thread finished.
 [LOG] Profile::disconnectAll                   : Profiler disconnecting all clients
