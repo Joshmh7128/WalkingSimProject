@@ -10,11 +10,11 @@ public class StaffHolderScript : MonoBehaviour
 
     public bool spotOccupied; // set in inspector, are we occupied right now?
 
-    public bool oneTimeUse = false;
+    public GameObject staffToLock;
 
     public List<UnityEvent> onPlaceActions = new List<UnityEvent>();
 
-    GameObject holderBase;
+    public GameObject holderBase;
 
     private void Start()
     {
@@ -36,10 +36,6 @@ public class StaffHolderScript : MonoBehaviour
             {
                 puzzleManager.playerScript.PlaceStaff(transform, this);
                 FMODUnity.RuntimeManager.PlayOneShotAttached("event:/Put Down", holderBase);
-                foreach (UnityEvent action in onPlaceActions)
-                {
-                    action.Invoke();
-                }
             }
         }
     }

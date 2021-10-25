@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Events;
 
 public class StaffScript : MonoBehaviour
 {
@@ -16,7 +17,7 @@ public class StaffScript : MonoBehaviour
 
     [SerializeField] IconDisplay icon;
 
-    bool locked;
+    public bool locked;
 
     void Start()
     {
@@ -78,7 +79,31 @@ public class StaffScript : MonoBehaviour
                     // if the staff has it's light set and this staff is not being held
                     if (staffState != PlayerScript.staffStates.None && isHeld == false)
                     {
-                        currentHolder.spotOccupied = false;
+                        if (currentHolder != null) currentHolder.spotOccupied = false;
+                        currentHolder = null;
+                        isHeld = true;
+
+                        // if we are not None then set the player's staff state to our staff state
+                        playerScript.StaffState = staffState;
+                        playerScript.ourStaff = this;
+
+                        // place our staff on our player so that our light tracks it
+                        transform.parent = playerScript.collectionTransform;
+                        //transform.position = playerScript.gameObject.transform.position;
+                        transform.position = playerScript.cosmeticStaffObjects[0].transform.position;
+                        transform.rotation = playerScript.cosmeticStaffObjects[0].transform.rotation;
+
+                        FMODUnity.RuntimeManager.PlayOneShotAttached("event:/Pick Up", gameObject);
+                    }
+                }
+                else if (currentHolder != null)
+                {
+                    if (staffState != PlayerScript.staffStates.None && isHeld == false)
+                    {
+
+                        puzzleManager.playerScript.PlaceStaff(currentHolder.transform, currentHolder);
+                        FMODUnity.RuntimeManager.PlayOneShotAttached("event:/Put Down", currentHolder.holderBase);
+
                         currentHolder = null;
                         isHeld = true;
 
@@ -108,10 +133,23 @@ public class StaffScript : MonoBehaviour
         currentHolder = newHolder;
         newHolder.spotOccupied = true;
         currentHolder.ActivateObjects(staffState);
-        if (newHolder.oneTimeUse)
+
+        if (newHolder.staffToLock == null)
+        {
+            foreach (UnityEvent action in newHolder.onPlaceActions)
+            {
+                action.Invoke();
+            }
+        }
+        
+        if (newHolder.staffToLock == gameObject)
         {
             transform.position = targetTransform.position - Vector3.up * 0.5f;
             locked = true;
+            foreach (UnityEvent action in newHolder.onPlaceActions)
+            {
+                action.Invoke();
+            }
         }
         else
         {
