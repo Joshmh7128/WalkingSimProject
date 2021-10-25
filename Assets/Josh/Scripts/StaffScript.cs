@@ -129,6 +129,7 @@ public class StaffScript : MonoBehaviour
     {
         isHeld = false;
         transform.parent = null;
+        playerScript.ourStaff = null;
         playerScript.StaffState = PlayerScript.staffStates.None;
         currentHolder = newHolder;
         newHolder.spotOccupied = true;

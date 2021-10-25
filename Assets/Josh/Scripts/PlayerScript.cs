@@ -8,6 +8,9 @@ public class PlayerScript : MonoBehaviour
 
     public StaffScript ourStaff;
 
+    public StaffScript centerStaff;
+    public GameObject centerEnclosure;
+
     public enum staffStates
     {
         // put all staff colors here
@@ -37,6 +40,11 @@ public class PlayerScript : MonoBehaviour
     }
 
     public Transform collectionTransform;
+
+    private void Update() 
+    {
+        centerEnclosure.SetActive(ourStaff == centerStaff);
+    }
 
     // wrapper for staff placement
     public void PlaceStaff(Transform targetTransform, StaffHolderScript newHolder)
