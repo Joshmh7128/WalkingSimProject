@@ -475,7 +475,7 @@ MonoBehaviour:
     data2: 0
   Type: 0
   IsGlobal: 0
-  Exists: 1
+  Exists: 0
 --- !u!114 &-8468863991436405993
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -823,7 +823,7 @@ MonoBehaviour:
     data2: 0
   Type: 0
   IsGlobal: 0
-  Exists: 1
+  Exists: 0
 --- !u!114 &-8058052410426537469
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2343,6 +2343,28 @@ MonoBehaviour:
   Type: 0
   IsGlobal: 0
   Exists: 0
+--- !u!114 &-5875534600434146862
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Music/Pad
+  m_EditorClassIdentifier: 
+  Name: Pad
+  Min: 0
+  Max: 1
+  Default: 0
+  ID:
+    data1: 0
+    data2: 0
+  Type: 0
+  IsGlobal: 0
+  Exists: 1
 --- !u!114 &-5871310350664843147
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2466,7 +2488,7 @@ MonoBehaviour:
   Path: Assets/StreamingAssets/Desktop/SFX.bank
   Name: SFX
   StudioPath: bank:/SFX
-  lastModified: 637706942140348001
+  lastModified: 637707953153516881
   FileSizes: []
   Exists: 1
 --- !u!114 &-5777651119290031368
@@ -4376,6 +4398,28 @@ MonoBehaviour:
   Type: 0
   IsGlobal: 0
   Exists: 0
+--- !u!114 &-3556715775804353484
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Music/Lead1
+  m_EditorClassIdentifier: 
+  Name: Lead1
+  Min: 0
+  Max: 1
+  Default: 0
+  ID:
+    data1: 0
+    data2: 0
+  Type: 0
+  IsGlobal: 0
+  Exists: 1
 --- !u!114 &-3543377759699524519
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4457,7 +4501,7 @@ MonoBehaviour:
   Path: Assets/StreamingAssets/Desktop/Master.assets.bank
   Name: Master.assets
   StudioPath: bank:/Master.assets
-  lastModified: 637706942139400550
+  lastModified: 637707953152545999
   FileSizes: []
   Exists: 1
 --- !u!114 &-3417559747060570333
@@ -6141,7 +6185,7 @@ MonoBehaviour:
   Path: Assets/StreamingAssets/Desktop/SFX.streams.bank
   Name: SFX.streams
   StudioPath: bank:/SFX.streams
-  lastModified: 637706942140567422
+  lastModified: 637707953154397682
   FileSizes: []
   Exists: 1
 --- !u!114 &-1601204573908576533
@@ -6379,7 +6423,7 @@ MonoBehaviour:
   Path: Assets/StreamingAssets/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 637706942139460382
+  lastModified: 637707953152566018
   FileSizes: []
   Exists: 1
 --- !u!114 &-1374494642222103087
@@ -6397,7 +6441,7 @@ MonoBehaviour:
   Path: Assets/StreamingAssets/Desktop/Music.bank
   Name: Music
   StudioPath: bank:/Music
-  lastModified: 637706942140128602
+  lastModified: 637707953153326710
   FileSizes: []
   Exists: 1
 --- !u!114 &-1352294197890110818
@@ -7531,7 +7575,7 @@ MonoBehaviour:
   - {fileID: -1394882835974695780}
   StringsBanks:
   - {fileID: 6625012119650969190}
-  stringsBankWriteTime: 637706942139969011
+  stringsBankWriteTime: 637707953152566018
   cacheVersion: 8
 --- !u!114 &124640204962274648
 MonoBehaviour:
@@ -7746,7 +7790,7 @@ MonoBehaviour:
   Path: Assets/StreamingAssets/Desktop/SFX.assets.bank
   Name: SFX.assets
   StudioPath: bank:/SFX.assets
-  lastModified: 637706942140348001
+  lastModified: 637707953153526892
   FileSizes: []
   Exists: 1
 --- !u!114 &483522303998123937
@@ -8425,7 +8469,7 @@ MonoBehaviour:
   Path: Assets/StreamingAssets/Desktop/Music.assets.bank
   Name: Music.assets
   StudioPath: bank:/Music.assets
-  lastModified: 637706942140078736
+  lastModified: 637707953152566018
   FileSizes: []
   Exists: 1
 --- !u!114 &1300085392494164129
@@ -9040,6 +9084,28 @@ MonoBehaviour:
   Type: 0
   IsGlobal: 0
   Exists: 0
+--- !u!114 &2109504931910082208
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Music/Lead2
+  m_EditorClassIdentifier: 
+  Name: Lead2
+  Min: 0
+  Max: 1
+  Default: 0
+  ID:
+    data1: 0
+    data2: 0
+  Type: 0
+  IsGlobal: 0
+  Exists: 1
 --- !u!114 &2206350229117795247
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10910,7 +10976,7 @@ MonoBehaviour:
     data2: 0
   Type: 0
   IsGlobal: 0
-  Exists: 1
+  Exists: 0
 --- !u!114 &4646614541108804771
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -12232,6 +12298,28 @@ MonoBehaviour:
   Type: 0
   IsGlobal: 0
   Exists: 0
+--- !u!114 &6564771818416885932
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Music/Bass
+  m_EditorClassIdentifier: 
+  Name: Bass
+  Min: 0
+  Max: 1
+  Default: 0
+  ID:
+    data1: 0
+    data2: 0
+  Type: 0
+  IsGlobal: 0
+  Exists: 1
 --- !u!114 &6603545765849967268
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -12269,7 +12357,7 @@ MonoBehaviour:
   Path: Assets/StreamingAssets/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 637706942139969011
+  lastModified: 637707953152566018
   FileSizes:
   - Name: 
     Value: 1474
@@ -12637,7 +12725,7 @@ MonoBehaviour:
   Path: Assets/StreamingAssets/Desktop/Music.streams.bank
   Name: Music.streams
   StudioPath: bank:/Music.streams
-  lastModified: 637706942140717019
+  lastModified: 637707953154828079
   FileSizes: []
   Exists: 1
 --- !u!114 &7230565778810772744
@@ -12726,10 +12814,10 @@ MonoBehaviour:
   Is3D: 0
   IsOneShot: 0
   Parameters:
-  - {fileID: -8477951531601228986}
-  - {fileID: 4638083724098762452}
-  - {fileID: -8065362515830954571}
-  - {fileID: 8623438775288259555}
+  - {fileID: 6564771818416885932}
+  - {fileID: -5875534600434146862}
+  - {fileID: 2109504931910082208}
+  - {fileID: -3556715775804353484}
   MinDistance: 0
   MaxDistance: 0
   Length: 274285
@@ -13298,7 +13386,7 @@ MonoBehaviour:
   Path: Assets/StreamingAssets/Desktop/Master.streams.bank
   Name: Master.streams
   StudioPath: bank:/Master.streams
-  lastModified: 637706942139959048
+  lastModified: 637707953152566018
   FileSizes: []
   Exists: 1
 --- !u!114 &7874980139575416174
@@ -14001,7 +14089,7 @@ MonoBehaviour:
     data2: 0
   Type: 0
   IsGlobal: 0
-  Exists: 1
+  Exists: 0
 --- !u!114 &8681789338155240903
 MonoBehaviour:
   m_ObjectHideFlags: 0
