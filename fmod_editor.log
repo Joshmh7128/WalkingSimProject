@@ -7,7 +7,7 @@
 [LOG] OutputWASAPI::init                       : Output buffer size: 4096 samples, latency: 0.00ms, period: 10.00ms, DSP buffer: 1024 * 4
 [LOG] Thread::initThread                       : Init FMOD stream thread. Affinity: 0x8000000000000003, Priority: 0xFFFF7FFB, Stack Size: 98304, Semaphore: No, Sleep Time: 10, Looping: Yes.
 [LOG] Thread::initThread                       : Init FMOD mixer thread. Affinity: 0x8000000000000001, Priority: 0xFFFF7FFA, Stack Size: 81920, Semaphore: No, Sleep Time: 0, Looping: Yes.
-[LOG] AsyncManager::init                       : manager 000001873CA75068 isAsync 0 updatePeriod 0.02
+[LOG] AsyncManager::init                       : manager 000001873CA71198 isAsync 0 updatePeriod 0.02
 [LOG] AsyncManager::init                       : done
 [LOG] PlaybackSystem::init                     : 
 [LOG] Thread::initThread                       : Init FMOD Studio sample load thread. Affinity: 0x8000000000000003, Priority: 0xFFFF7FFD, Stack Size: 98304, Semaphore: No, Sleep Time: 1, Looping: No.
@@ -18,3 +18,33 @@
 [LOG] Manager::readBank                        : fileversion = 135, compatVersion = 132 (oldest = 44, newest = 135)
 [LOG] Manager::readBank                        : fileversion = 135, compatVersion = 132 (oldest = 44, newest = 135)
 [LOG] PlaybackSystem::acquireMasterBus         : Setting master channel group format to 6
+[LOG] SoundI::release                          : Solarity_Pad-001 (00000187E9650018)
+[LOG] SoundI::release                          :     Solarity_Pad-001 (000001867B535D78)
+[LOG] SoundI::release                          :     Solarity_Pad-001 (0000018726BA8A68)
+[LOG] SoundI::release                          : Solarity_Lead1-001 (00000187E964FB08)
+[LOG] SoundI::release                          :     Solarity_Lead1-001 (000001867B534858)
+[LOG] SoundI::release                          :     Solarity_Lead1-001 (00000187E9B01F88)
+[LOG] SoundI::release                          : Solarity_Lead2-001 (000001872C3E84D8)
+[LOG] SoundI::release                          :     Solarity_Lead2-001 (000001867B534518)
+[LOG] SoundI::release                          :     Solarity_Lead2-001 (00000187E9B029A8)
+[LOG] SoundI::release                          : Solarity_Bass-001 (000001872C3E8EF8)
+[LOG] SoundI::release                          :     Solarity_Bass-001 (000001867B533E98)
+[LOG] SoundI::release                          :     Solarity_Bass-001 (00000187E9B027F8)
+[LOG] SoundI::release                          : Ambience, Seashore, Constant Sea Wash, Cliff Perspective, No Voices, Sunset-Stereo_01 (000001872C3E89E8)
+[LOG] SoundI::release                          :     Ambience, Seashore, Constant Sea Wash, Cliff Perspective, No Voices, Sunset-Stereo_01 (000001867B535A38)
+[LOG] SoundI::release                          :     Ambience, Seashore, Constant Sea Wash, Cliff Perspective, No Voices, Sunset-Stereo_01 (000001872CE99518)
+[LOG] SoundI::release                          : Ambience, Seashore, Constant Sea Wash, Cliff Perspective, No Voices, Sunset-Stereo_01 (000001872C3E8178)
+[LOG] SoundI::release                          :     Ambience, Seashore, Constant Sea Wash, Cliff Perspective, No Voices, Sunset-Stereo_01 (000001867B5375D8)
+[LOG] SoundI::release                          :     Ambience, Seashore, Constant Sea Wash, Cliff Perspective, No Voices, Sunset-Stereo_01 (00000187E9B02648)
+[LOG] SoundI::release                          :  (000001872CD3F698)
+[LOG] SoundI::release                          :     363122__el-bee__landmass-earth-rumble (000001867B536DB8)
+[LOG] Thread::callback                         : FMOD Studio update thread finished.
+[LOG] Thread::callback                         : FMOD Studio bank load thread finished.
+[LOG] Profile::disconnectAll                   : Profiler disconnecting all clients
+[LOG] Thread::callback                         : FMOD Studio sample load thread finished.
+[LOG] LiveUpdate::release                      : 
+[LOG] LiveUpdate::reset                        : Reset connection (reason Disconnected)
+[LOG] Thread::callback                         : FMOD stream thread finished.
+[LOG] Thread::callback                         : FMOD mixer thread finished.
+[LOG] Profile::disconnectAll                   : Profiler disconnecting all clients
+[LOG] SystemI::close                           : Closed.
