@@ -161,7 +161,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &379993942923756591
 Transform:
@@ -820,7 +820,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &379993943052106587
 Transform:
@@ -904,6 +904,7 @@ MonoBehaviour:
   lightOrigin: {fileID: 379993942923756591}
   lightTarget: {fileID: 0}
   isOn: 1
+  dependsOn: []
 --- !u!1 &379993943677055263
 GameObject:
   m_ObjectHideFlags: 0
@@ -922,7 +923,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &379993943677055262
 Transform:

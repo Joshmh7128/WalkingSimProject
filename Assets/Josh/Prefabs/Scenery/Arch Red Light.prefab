@@ -12,12 +12,13 @@ GameObject:
   - component: {fileID: 5585393037861553102}
   - component: {fileID: 5585393037861553101}
   - component: {fileID: 5585393037861553100}
+  - component: {fileID: 8448409061503072341}
   m_Layer: 0
   m_Name: Arch
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &5585393037861553103
 Transform:
@@ -6358,6 +6359,20 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5585393037861553098}
   m_Mesh: {fileID: 0}
+--- !u!64 &8448409061503072341
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5585393037861553098}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 0}
 --- !u!1 &5585393038058695181
 GameObject:
   m_ObjectHideFlags: 0
@@ -6370,12 +6385,13 @@ GameObject:
   - component: {fileID: 5585393038058695170}
   - component: {fileID: 5585393038058695169}
   - component: {fileID: 5585393038058695168}
+  - component: {fileID: 1365136910549987846}
   m_Layer: 0
   m_Name: Cube (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &5585393038058695182
 Transform:
@@ -6656,6 +6672,20 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5585393038058695181}
   m_Mesh: {fileID: 0}
+--- !u!64 &1365136910549987846
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5585393038058695181}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 0}
 --- !u!1 &5585393038480950505
 GameObject:
   m_ObjectHideFlags: 0
@@ -6670,7 +6700,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &5585393038480950506
 Transform:
@@ -6703,12 +6733,13 @@ GameObject:
   - component: {fileID: 5585393038744251318}
   - component: {fileID: 5585393038744251317}
   - component: {fileID: 5585393038744251316}
+  - component: {fileID: 3599212394746906058}
   m_Layer: 0
   m_Name: Cube
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &5585393038744251314
 Transform:
@@ -6989,6 +7020,20 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5585393038744251313}
   m_Mesh: {fileID: 0}
+--- !u!64 &3599212394746906058
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5585393038744251313}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 0}
 --- !u!1 &5585393039276853266
 GameObject:
   m_ObjectHideFlags: 0
@@ -7001,12 +7046,13 @@ GameObject:
   - component: {fileID: 5585393039276853271}
   - component: {fileID: 5585393039276853270}
   - component: {fileID: 5585393039276853269}
+  - component: {fileID: 2957525027276702057}
   m_Layer: 0
   m_Name: Cube (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &5585393039276853267
 Transform:
@@ -7287,6 +7333,20 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5585393039276853266}
   m_Mesh: {fileID: 0}
+--- !u!64 &2957525027276702057
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5585393039276853266}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 0}
 --- !u!1 &6214693590707590529
 GameObject:
   m_ObjectHideFlags: 0
@@ -7303,7 +7363,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &5558773418020354953
 Transform:

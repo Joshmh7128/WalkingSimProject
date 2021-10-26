@@ -736,6 +736,28 @@ MonoBehaviour:
   Type: 0
   IsGlobal: 0
   Exists: 1
+--- !u!114 &-8136883412608372399
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Music/Bass
+  m_EditorClassIdentifier: 
+  Name: Bass
+  Min: 0
+  Max: 1
+  Default: 0
+  ID:
+    data1: 0
+    data2: 0
+  Type: 0
+  IsGlobal: 0
+  Exists: 1
 --- !u!114 &-8106717245991530991
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1858,6 +1880,28 @@ MonoBehaviour:
   Type: 0
   IsGlobal: 0
   Exists: 1
+--- !u!114 &-6414846605145363160
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Music/Pad
+  m_EditorClassIdentifier: 
+  Name: Pad
+  Min: 0
+  Max: 1
+  Default: 0
+  ID:
+    data1: 0
+    data2: 0
+  Type: 0
+  IsGlobal: 0
+  Exists: 0
 --- !u!114 &-6372139288461959283
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2101,6 +2145,28 @@ MonoBehaviour:
   Type: 0
   IsGlobal: 0
   Exists: 0
+--- !u!114 &-6174131930692881898
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Music/Lead2
+  m_EditorClassIdentifier: 
+  Name: Lead2
+  Min: 0
+  Max: 1
+  Default: 0
+  ID:
+    data1: 0
+    data2: 0
+  Type: 0
+  IsGlobal: 0
+  Exists: 1
 --- !u!114 &-6158166494530639940
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2123,6 +2189,28 @@ MonoBehaviour:
   Type: 0
   IsGlobal: 0
   Exists: 0
+--- !u!114 &-6144655000155105156
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Music/Pad
+  m_EditorClassIdentifier: 
+  Name: Pad
+  Min: 0
+  Max: 1
+  Default: 0
+  ID:
+    data1: 0
+    data2: 0
+  Type: 0
+  IsGlobal: 0
+  Exists: 1
 --- !u!114 &-6139129633156701310
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2488,7 +2576,7 @@ MonoBehaviour:
   Path: Assets/StreamingAssets/Desktop/SFX.bank
   Name: SFX
   StudioPath: bank:/SFX
-  lastModified: 637707953153516881
+  lastModified: 637708101013885496
   FileSizes: []
   Exists: 1
 --- !u!114 &-5777651119290031368
@@ -2751,6 +2839,28 @@ MonoBehaviour:
   Type: 0
   IsGlobal: 0
   Exists: 0
+--- !u!114 &-5542960487988505577
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Music/Lead1
+  m_EditorClassIdentifier: 
+  Name: Lead1
+  Min: 0
+  Max: 1
+  Default: 0
+  ID:
+    data1: 0
+    data2: 0
+  Type: 0
+  IsGlobal: 0
+  Exists: 1
 --- !u!114 &-5540626501820232204
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4501,7 +4611,7 @@ MonoBehaviour:
   Path: Assets/StreamingAssets/Desktop/Master.assets.bank
   Name: Master.assets
   StudioPath: bank:/Master.assets
-  lastModified: 637707953152545999
+  lastModified: 637708101013185419
   FileSizes: []
   Exists: 1
 --- !u!114 &-3417559747060570333
@@ -4810,6 +4920,28 @@ MonoBehaviour:
   Type: 0
   IsGlobal: 0
   Exists: 1
+--- !u!114 &-3189550080472526782
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Music/Bass
+  m_EditorClassIdentifier: 
+  Name: Bass
+  Min: 0
+  Max: 1
+  Default: 0
+  ID:
+    data1: 0
+    data2: 0
+  Type: 0
+  IsGlobal: 0
+  Exists: 0
 --- !u!114 &-3185964250121158037
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6185,7 +6317,7 @@ MonoBehaviour:
   Path: Assets/StreamingAssets/Desktop/SFX.streams.bank
   Name: SFX.streams
   StudioPath: bank:/SFX.streams
-  lastModified: 637707953154397682
+  lastModified: 637708101014434025
   FileSizes: []
   Exists: 1
 --- !u!114 &-1601204573908576533
@@ -6423,7 +6555,7 @@ MonoBehaviour:
   Path: Assets/StreamingAssets/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 637707953152566018
+  lastModified: 637708101013175424
   FileSizes: []
   Exists: 1
 --- !u!114 &-1374494642222103087
@@ -6441,7 +6573,7 @@ MonoBehaviour:
   Path: Assets/StreamingAssets/Desktop/Music.bank
   Name: Music
   StudioPath: bank:/Music
-  lastModified: 637707953153326710
+  lastModified: 637708101013255215
   FileSizes: []
   Exists: 1
 --- !u!114 &-1352294197890110818
@@ -6643,6 +6775,28 @@ MonoBehaviour:
   Type: 0
   IsGlobal: 0
   Exists: 0
+--- !u!114 &-1151562085882797523
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Music/Lead2
+  m_EditorClassIdentifier: 
+  Name: Lead2
+  Min: 0
+  Max: 1
+  Default: 0
+  ID:
+    data1: 0
+    data2: 0
+  Type: 0
+  IsGlobal: 0
+  Exists: 1
 --- !u!114 &-1139150228185568881
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6819,6 +6973,28 @@ MonoBehaviour:
   Type: 0
   IsGlobal: 0
   Exists: 1
+--- !u!114 &-950874696369359733
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Music/Lead1
+  m_EditorClassIdentifier: 
+  Name: Lead1
+  Min: 0
+  Max: 1
+  Default: 0
+  ID:
+    data1: 0
+    data2: 0
+  Type: 0
+  IsGlobal: 0
+  Exists: 0
 --- !u!114 &-928050291484735744
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7575,7 +7751,7 @@ MonoBehaviour:
   - {fileID: -1394882835974695780}
   StringsBanks:
   - {fileID: 6625012119650969190}
-  stringsBankWriteTime: 637707953152566018
+  stringsBankWriteTime: 637708101013205337
   cacheVersion: 8
 --- !u!114 &124640204962274648
 MonoBehaviour:
@@ -7790,7 +7966,7 @@ MonoBehaviour:
   Path: Assets/StreamingAssets/Desktop/SFX.assets.bank
   Name: SFX.assets
   StudioPath: bank:/SFX.assets
-  lastModified: 637707953153526892
+  lastModified: 637708101014074991
   FileSizes: []
   Exists: 1
 --- !u!114 &483522303998123937
@@ -8469,7 +8645,7 @@ MonoBehaviour:
   Path: Assets/StreamingAssets/Desktop/Music.assets.bank
   Name: Music.assets
   StudioPath: bank:/Music.assets
-  lastModified: 637707953152566018
+  lastModified: 637708101013275143
   FileSizes: []
   Exists: 1
 --- !u!114 &1300085392494164129
@@ -9811,6 +9987,28 @@ MonoBehaviour:
   Type: 0
   IsGlobal: 0
   Exists: 0
+--- !u!114 &3199119419861860843
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Music/Bass
+  m_EditorClassIdentifier: 
+  Name: Bass
+  Min: 0
+  Max: 1
+  Default: 0
+  ID:
+    data1: 0
+    data2: 0
+  Type: 0
+  IsGlobal: 0
+  Exists: 1
 --- !u!114 &3221484803295980731
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10053,6 +10251,28 @@ MonoBehaviour:
   Type: 0
   IsGlobal: 0
   Exists: 0
+--- !u!114 &3468637782018161780
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Music/Lead1
+  m_EditorClassIdentifier: 
+  Name: Lead1
+  Min: 0
+  Max: 1
+  Default: 0
+  ID:
+    data1: 0
+    data2: 0
+  Type: 0
+  IsGlobal: 0
+  Exists: 1
 --- !u!114 &3485719983016145495
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10889,6 +11109,28 @@ MonoBehaviour:
   Type: 0
   IsGlobal: 0
   Exists: 0
+--- !u!114 &4512502145638732876
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Music/Pad
+  m_EditorClassIdentifier: 
+  Name: Pad
+  Min: 0
+  Max: 1
+  Default: 0
+  ID:
+    data1: 0
+    data2: 0
+  Type: 0
+  IsGlobal: 0
+  Exists: 1
 --- !u!114 &4559894225588781694
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11176,6 +11418,28 @@ MonoBehaviour:
   IsGlobal: 0
   Exists: 0
 --- !u!114 &5043545487209172925
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Music/Lead2
+  m_EditorClassIdentifier: 
+  Name: Lead2
+  Min: 0
+  Max: 1
+  Default: 0
+  ID:
+    data1: 0
+    data2: 0
+  Type: 0
+  IsGlobal: 0
+  Exists: 0
+--- !u!114 &5044462121730317781
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -12357,7 +12621,7 @@ MonoBehaviour:
   Path: Assets/StreamingAssets/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 637707953152566018
+  lastModified: 637708101013205337
   FileSizes:
   - Name: 
     Value: 1474
@@ -12725,7 +12989,7 @@ MonoBehaviour:
   Path: Assets/StreamingAssets/Desktop/Music.streams.bank
   Name: Music.streams
   StudioPath: bank:/Music.streams
-  lastModified: 637707953154828079
+  lastModified: 637708101013810601
   FileSizes: []
   Exists: 1
 --- !u!114 &7230565778810772744
@@ -12814,10 +13078,10 @@ MonoBehaviour:
   Is3D: 0
   IsOneShot: 0
   Parameters:
-  - {fileID: 6564771818416885932}
-  - {fileID: -5875534600434146862}
-  - {fileID: 2109504931910082208}
-  - {fileID: -3556715775804353484}
+  - {fileID: 3199119419861860843}
+  - {fileID: 4512502145638732876}
+  - {fileID: -1151562085882797523}
+  - {fileID: -5542960487988505577}
   MinDistance: 0
   MaxDistance: 0
   Length: 274285
@@ -13386,7 +13650,7 @@ MonoBehaviour:
   Path: Assets/StreamingAssets/Desktop/Master.streams.bank
   Name: Master.streams
   StudioPath: bank:/Master.streams
-  lastModified: 637707953152566018
+  lastModified: 637708101013195365
   FileSizes: []
   Exists: 1
 --- !u!114 &7874980139575416174
